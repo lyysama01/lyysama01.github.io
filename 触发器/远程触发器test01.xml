@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<TriggernometryExport Version="1">
+  <ExportedFolder Id="dd14de99-ebae-4198-9667-3e37642bcb42" Name="远程触发器test01" Enabled="true">
+    <Folders />
+    <Triggers>
+      <Trigger Enabled="true" Name="远程触发器的第一个触发器" Id="a1dce779-97d8-4ae2-ab66-e4b7da356791" RegularExpression="第一个远程">
+        <Actions>
+          <Action OrderNumber="1" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="SystemBeep">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="2" NamedCallbackName="command" NamedCallbackParam="/e HelloWorld" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+        </Actions>
+        <Condition Enabled="false" Grouping="Or" />
+        <Conditions />
+      </Trigger>
+    </Triggers>
+  </ExportedFolder>
+</TriggernometryExport>

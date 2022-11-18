@@ -795,7 +795,6 @@
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Trigger>
               <Trigger Enabled="true" Sequential="True" Name="简单粗暴时间轴-MT" Id="0cf25bf2-f6ea-451f-9b32-5a3501d2979f" RegularExpression="战斗开始！">
                 <Actions>
@@ -849,7 +848,6 @@
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Trigger>
               <Trigger Enabled="true" Name="团灭初始化" Id="a2d6c351-f070-4e30-a827-9257efd8510b" RegularExpression="^.{14} 21:.{8}:400000(03|1[026])|^.{14} Director 21:.{8}:400000(03|1[026])" RefirePeriodExpression="5000">
                 <Actions>
@@ -861,7 +859,6 @@
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Trigger>
               <Trigger Enabled="true" Name="水基佬死亡" Id="2a26928f-8dd9-4982-a71a-e74cc097221e" RegularExpression="EffectResult .*有生命活水:.*:0:">
                 <Actions>
@@ -876,12 +873,94 @@
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Trigger>
             </Triggers>
           </Folder>
         </Folders>
         <Triggers />
+      </Folder>
+      <Folder Id="66c5dc2a-6d28-4699-b7e5-b4675fbccb06" Name="其他功能" Enabled="true">
+        <Folders />
+        <Triggers>
+          <Trigger Enabled="true" Name="圈圈计数器（改）" Id="7d126f9a-10ef-4049-bc76-9568936306a1" RegularExpression="4830:(鹰式破坏炮|Hawk Blaster|ホークブラスター):" PeriodRefire="Deny" RefirePeriodExpression="60000">
+            <Actions>
+              <Action OrderNumber="1" TextAuraAlignment="MiddleLeft" TextAuraFontSize="48" TextAuraForeground="White" TextAuraOutline="Black" TextAuraName="圈圈计数" TextAuraExpression="　②③④中" TextAuraXIniExpression="1250" TextAuraYIniExpression="401" TextAuraWIniExpression="755" TextAuraHIniExpression="124" TextAuraOIniExpression="100" TextAuraUseOutline="True" TextAuraFontName="方正喵鸣" ActionType="TextAura">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="2" TextAuraAlignment="MiddleLeft" TextAuraFontSize="48" TextAuraForeground="White" TextAuraOutline="Black" TextAuraName="圈圈计数2" TextAuraExpression="⑥⑦⑧⑨中" TextAuraXIniExpression="1250" TextAuraYIniExpression="496" TextAuraWIniExpression="755" TextAuraHIniExpression="85" TextAuraOIniExpression="100" TextAuraUseOutline="True" TextAuraFontName="方正喵鸣" ActionType="TextAura">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="3" TextAuraAlignment="MiddleLeft" TextAuraFontSize="48" TextAuraForeground="White" TextAuraOutline="Fuchsia" TextAuraName="圈圈计数3" TextAuraExpression="①" TextAuraXIniExpression="1250" TextAuraYIniExpression="401" TextAuraWIniExpression="755" TextAuraHIniExpression="124" TextAuraOIniExpression="100" TextAuraUseOutline="True" TextAuraFontName="方正喵鸣" ActionType="TextAura">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="4" TextAuraAlignment="MiddleLeft" TextAuraFontSize="48" TextAuraForeground="White" TextAuraOutline="Black" TextAuraName="圈圈计数" TextAuraExpression="①　③④中" TextAuraXIniExpression="1250" TextAuraYIniExpression="401" TextAuraWIniExpression="755" TextAuraHIniExpression="124" TextAuraOIniExpression="100" TextAuraUseOutline="True" TextAuraFontName="方正喵鸣" ActionType="TextAura" ExecutionDelayExpression="2000">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="5" TextAuraAlignment="MiddleLeft" TextAuraFontSize="48" TextAuraForeground="White" TextAuraOutline="Fuchsia" TextAuraName="圈圈计数3" TextAuraExpression="　②" TextAuraXIniExpression="1250" TextAuraYIniExpression="401" TextAuraWIniExpression="755" TextAuraHIniExpression="124" TextAuraOIniExpression="100" TextAuraUseOutline="True" TextAuraFontName="方正喵鸣" ActionType="TextAura">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="6" TextAuraAlignment="MiddleLeft" TextAuraFontSize="48" TextAuraForeground="White" TextAuraOutline="Black" TextAuraName="圈圈计数" TextAuraExpression="①②　④中" TextAuraXIniExpression="1250" TextAuraYIniExpression="401" TextAuraWIniExpression="755" TextAuraHIniExpression="124" TextAuraOIniExpression="100" TextAuraUseOutline="True" TextAuraFontName="方正喵鸣" ActionType="TextAura" ExecutionDelayExpression="2000">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="7" TextAuraAlignment="MiddleLeft" TextAuraFontSize="48" TextAuraForeground="White" TextAuraOutline="Fuchsia" TextAuraName="圈圈计数3" TextAuraExpression="　　③" TextAuraXIniExpression="1250" TextAuraYIniExpression="401" TextAuraWIniExpression="755" TextAuraHIniExpression="124" TextAuraOIniExpression="100" TextAuraUseOutline="True" TextAuraFontName="方正喵鸣" ActionType="TextAura">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="8" TextAuraAlignment="MiddleLeft" TextAuraFontSize="48" TextAuraForeground="White" TextAuraOutline="Black" TextAuraName="圈圈计数" TextAuraExpression="①②③　中" TextAuraXIniExpression="1250" TextAuraYIniExpression="401" TextAuraWIniExpression="755" TextAuraHIniExpression="124" TextAuraOIniExpression="100" TextAuraUseOutline="True" TextAuraFontName="方正喵鸣" ActionType="TextAura" ExecutionDelayExpression="2000">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="9" TextAuraAlignment="MiddleLeft" TextAuraFontSize="48" TextAuraForeground="White" TextAuraOutline="Fuchsia" TextAuraName="圈圈计数3" TextAuraExpression="　　　④" TextAuraXIniExpression="1250" TextAuraYIniExpression="401" TextAuraWIniExpression="755" TextAuraHIniExpression="124" TextAuraOIniExpression="100" TextAuraUseOutline="True" TextAuraFontName="方正喵鸣" ActionType="TextAura">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="10" TextAuraAlignment="MiddleLeft" TextAuraFontSize="48" TextAuraForeground="White" TextAuraOutline="Black" TextAuraName="圈圈计数" TextAuraExpression="①②③④" TextAuraXIniExpression="1250" TextAuraYIniExpression="401" TextAuraWIniExpression="755" TextAuraHIniExpression="124" TextAuraOIniExpression="100" TextAuraUseOutline="True" TextAuraFontName="方正喵鸣" ActionType="TextAura" ExecutionDelayExpression="2000">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="11" TextAuraAlignment="MiddleLeft" TextAuraFontSize="48" TextAuraForeground="White" TextAuraOutline="Fuchsia" TextAuraName="圈圈计数3" TextAuraExpression="　　　　中" TextAuraXIniExpression="1250" TextAuraYIniExpression="401" TextAuraWIniExpression="755" TextAuraHIniExpression="124" TextAuraOIniExpression="100" TextAuraUseOutline="True" TextAuraFontName="方正喵鸣" ActionType="TextAura">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="12" TextAuraAlignment="MiddleLeft" TextAuraFontSize="48" TextAuraForeground="White" TextAuraOutline="Black" TextAuraName="圈圈计数" TextAuraExpression="①②③④中" TextAuraXIniExpression="1250" TextAuraYIniExpression="401" TextAuraWIniExpression="755" TextAuraHIniExpression="124" TextAuraOIniExpression="100" TextAuraUseOutline="True" TextAuraFontName="方正喵鸣" ActionType="TextAura" ExecutionDelayExpression="2000">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="13" TextAuraOp="DeactivateAura" TextAuraAlignment="MiddleLeft" TextAuraFontSize="36" TextAuraForeground="Red" TextAuraOutline="#FF8000" TextAuraName="圈圈计数3" TextAuraExpression="        中" TextAuraXIniExpression="953" TextAuraYIniExpression="177" TextAuraWIniExpression="755" TextAuraHIniExpression="124" TextAuraOIniExpression="100" TextAuraUseOutline="True" TextAuraFontName="宋体" ActionType="TextAura">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="14" TextAuraAlignment="MiddleLeft" TextAuraFontSize="48" TextAuraForeground="White" TextAuraOutline="Black" TextAuraName="圈圈计数2" TextAuraExpression="　⑦⑧⑨中" TextAuraXIniExpression="1250" TextAuraYIniExpression="496" TextAuraWIniExpression="755" TextAuraHIniExpression="85" TextAuraOIniExpression="100" TextAuraUseOutline="True" TextAuraFontName="方正喵鸣" ActionType="TextAura">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="15" TextAuraAlignment="MiddleLeft" TextAuraFontSize="48" TextAuraForeground="White" TextAuraOutline="Fuchsia" TextAuraName="圈圈计数4" TextAuraExpression="⑥" TextAuraXIniExpression="1250" TextAuraYIniExpression="496" TextAuraWIniExpression="755" TextAuraHIniExpression="85" TextAuraOIniExpression="100" TextAuraUseOutline="True" TextAuraFontName="方正喵鸣" ActionType="TextAura">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="16" TextAuraAlignment="MiddleLeft" TextAuraFontSize="48" TextAuraForeground="White" TextAuraOutline="Black" TextAuraName="圈圈计数2" TextAuraExpression="⑥　⑧⑨中" TextAuraXIniExpression="1250" TextAuraYIniExpression="496" TextAuraWIniExpression="755" TextAuraHIniExpression="85" TextAuraOIniExpression="100" TextAuraUseOutline="True" TextAuraFontName="方正喵鸣" ActionType="TextAura" ExecutionDelayExpression="2000">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="17" TextAuraAlignment="MiddleLeft" TextAuraFontSize="48" TextAuraForeground="White" TextAuraOutline="Fuchsia" TextAuraName="圈圈计数4" TextAuraExpression="　⑦" TextAuraXIniExpression="1250" TextAuraYIniExpression="496" TextAuraWIniExpression="755" TextAuraHIniExpression="85" TextAuraOIniExpression="100" TextAuraUseOutline="True" TextAuraFontName="方正喵鸣" ActionType="TextAura">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="18" TextAuraAlignment="MiddleLeft" TextAuraFontSize="48" TextAuraForeground="White" TextAuraOutline="Black" TextAuraName="圈圈计数2" TextAuraExpression="⑥⑦　⑨中" TextAuraXIniExpression="1250" TextAuraYIniExpression="496" TextAuraWIniExpression="755" TextAuraHIniExpression="85" TextAuraOIniExpression="100" TextAuraUseOutline="True" TextAuraFontName="方正喵鸣" ActionType="TextAura" ExecutionDelayExpression="2000">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="19" TextAuraAlignment="MiddleLeft" TextAuraFontSize="48" TextAuraForeground="White" TextAuraOutline="Fuchsia" TextAuraName="圈圈计数4" TextAuraExpression="　　⑧" TextAuraXIniExpression="1250" TextAuraYIniExpression="496" TextAuraWIniExpression="755" TextAuraHIniExpression="85" TextAuraOIniExpression="100" TextAuraUseOutline="True" TextAuraFontName="方正喵鸣" ActionType="TextAura">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="20" TextAuraAlignment="MiddleLeft" TextAuraFontSize="48" TextAuraForeground="White" TextAuraOutline="Black" TextAuraName="圈圈计数2" TextAuraExpression="⑥⑦⑧　中" TextAuraXIniExpression="1250" TextAuraYIniExpression="496" TextAuraWIniExpression="755" TextAuraHIniExpression="85" TextAuraOIniExpression="100" TextAuraUseOutline="True" TextAuraFontName="方正喵鸣" ActionType="TextAura" ExecutionDelayExpression="2000">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="21" TextAuraAlignment="MiddleLeft" TextAuraFontSize="48" TextAuraForeground="White" TextAuraOutline="Fuchsia" TextAuraName="圈圈计数4" TextAuraExpression="　　　⑨" TextAuraXIniExpression="1250" TextAuraYIniExpression="496" TextAuraWIniExpression="755" TextAuraHIniExpression="85" TextAuraOIniExpression="100" TextAuraUseOutline="True" TextAuraFontName="方正喵鸣" ActionType="TextAura">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="22" TextAuraAlignment="MiddleLeft" TextAuraFontSize="48" TextAuraForeground="White" TextAuraOutline="Black" TextAuraName="圈圈计数2" TextAuraExpression="⑥⑦⑧⑨" TextAuraXIniExpression="1250" TextAuraYIniExpression="496" TextAuraWIniExpression="755" TextAuraHIniExpression="85" TextAuraOIniExpression="100" TextAuraUseOutline="True" TextAuraFontName="方正喵鸣" ActionType="TextAura" ExecutionDelayExpression="2000">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="23" TextAuraAlignment="MiddleLeft" TextAuraFontSize="48" TextAuraForeground="White" TextAuraOutline="Fuchsia" TextAuraName="圈圈计数4" TextAuraExpression="　　　　中" TextAuraXIniExpression="1250" TextAuraYIniExpression="496" TextAuraWIniExpression="755" TextAuraHIniExpression="85" TextAuraOIniExpression="100" TextAuraUseOutline="True" TextAuraFontName="方正喵鸣" ActionType="TextAura">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="24" TextAuraOp="DeactivateAllAura" TextAuraAlignment="MiddleLeft" TextAuraFontSize="36" TextAuraForeground="White" TextAuraOutline="Black" TextAuraName="圈圈计数2" TextAuraExpression="⑥⑦⑧⑨" TextAuraXIniExpression="955" TextAuraYIniExpression="266" TextAuraWIniExpression="755" TextAuraHIniExpression="55" TextAuraOIniExpression="100" TextAuraUseOutline="True" TextAuraFontName="宋体" ActionType="TextAura" ExecutionDelayExpression="2000">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
+          </Trigger>
+        </Triggers>
       </Folder>
     </Folders>
     <Triggers>

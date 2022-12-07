@@ -3,12 +3,12 @@
   <ExportedFolder Id="af0a9990-51fd-4b6d-9dde-b70fc5273537" Name="P2三传四传" Enabled="true">
     <Folders />
     <Triggers>
-      <Trigger Enabled="true" Name="α获得蓝疫苗" Id="5465786c-b319-4a1f-a1a8-bff0218b39a7" RegularExpression="^.{15}\S+ 1A:[^:]*:终审：判决α:[^:]*:[^:]*::[^:]*:(?&lt;player&gt;[^:]+):">
+      <Trigger Enabled="true" Name="α获得蓝疫苗" Id="5465786c-b319-4a1f-a1a8-bff0218b39a7" RegularExpression="^.{15}\S+ 1A:[^:]*:终审：判决α:[^:]*:[^:]*::[^:]*:(?&lt;player&gt;[^:]+):" PrevActionsRefire="Deny" PeriodRefire="Deny" RefirePeriodExpression="120000">
         <Actions>
           <Action OrderNumber="1" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" VariableOp="SetString" VariableName="当前疫苗" VariableExpression="蓝疫苗" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
             <Condition Enabled="false" Grouping="Or" />
           </Action>
-          <Action OrderNumber="2" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" UseTTSTextExpression="获得蓝疫苗" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS">
+          <Action OrderNumber="2" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" UseTTSTextExpression="获得蓝疫苗" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="UseTTS">
             <Condition Enabled="false" Grouping="Or" />
           </Action>
         </Actions>
@@ -16,9 +16,9 @@
           <ConditionSingle Enabled="true" ExpressionL="${player}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
         </Condition>
       </Trigger>
-      <Trigger Enabled="true" Name="β获得橙疫苗" Id="72d0935c-1ca9-4a1b-b270-6e6d8ef4ad90" RegularExpression="^.{15}\S+ 1A:[^:]*:终审：判决β:[^:]*:[^:]*::[^:]*:(?&lt;player&gt;[^:]+):">
+      <Trigger Enabled="true" Name="β获得橙疫苗" Id="72d0935c-1ca9-4a1b-b270-6e6d8ef4ad90" RegularExpression="^.{15}\S+ 1A:[^:]*:终审：判决β:[^:]*:[^:]*::[^:]*:(?&lt;player&gt;[^:]+):" PrevActionsRefire="Deny" PeriodRefire="Deny" RefirePeriodExpression="120000">
         <Actions>
-          <Action OrderNumber="1" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" UseTTSTextExpression="获得橙疫苗" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS">
+          <Action OrderNumber="1" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" UseTTSTextExpression="获得橙疫苗" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="UseTTS">
             <Condition Enabled="false" Grouping="Or" />
           </Action>
           <Action OrderNumber="2" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" VariableOp="SetString" VariableName="当前疫苗" VariableExpression="橙疫苗" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
@@ -29,9 +29,9 @@
           <ConditionSingle Enabled="true" ExpressionL="${player}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
         </Condition>
       </Trigger>
-      <Trigger Enabled="true" Name="γ获得紫疫苗" Id="762bf1c1-6fc9-4121-996d-a70886b930fd" RegularExpression="^.{15}\S+ 1A:[^:]*:终审：判决γ:[^:]*:[^:]*::[^:]*:(?&lt;player&gt;[^:]+):">
+      <Trigger Enabled="true" Name="γ获得紫疫苗" Id="762bf1c1-6fc9-4121-996d-a70886b930fd" RegularExpression="^.{15}\S+ 1A:[^:]*:终审：判决γ:[^:]*:[^:]*::[^:]*:(?&lt;player&gt;[^:]+):" PrevActionsRefire="Deny" PeriodRefire="Deny" RefirePeriodExpression="120000">
         <Actions>
-          <Action OrderNumber="1" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" UseTTSTextExpression="获得紫疫苗" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS">
+          <Action OrderNumber="1" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" UseTTSTextExpression="获得紫疫苗" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="UseTTS">
             <Condition Enabled="false" Grouping="Or" />
           </Action>
           <Action OrderNumber="2" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" VariableOp="SetString" VariableName="当前疫苗" VariableExpression="紫疫苗" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
@@ -42,9 +42,9 @@
           <ConditionSingle Enabled="true" ExpressionL="${player}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
         </Condition>
       </Trigger>
-      <Trigger Enabled="true" Name="δ获得绿疫苗" Id="fc43cc4f-9932-4b2f-bb76-82ff2ba736f3" RegularExpression="^.{15}\S+ 1A:[^:]*:终审：判决δ:[^:]*:[^:]*::[^:]*:(?&lt;player&gt;[^:]+):">
+      <Trigger Enabled="true" Name="δ获得绿疫苗" Id="fc43cc4f-9932-4b2f-bb76-82ff2ba736f3" RegularExpression="^.{15}\S+ 1A:[^:]*:终审：判决δ:[^:]*:[^:]*::[^:]*:(?&lt;player&gt;[^:]+):" PrevActionsRefire="Deny" PeriodRefire="Deny" RefirePeriodExpression="120000">
         <Actions>
-          <Action OrderNumber="1" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" UseTTSTextExpression="获得绿疫苗" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS">
+          <Action OrderNumber="1" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" UseTTSTextExpression="获得绿疫苗" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="UseTTS">
             <Condition Enabled="false" Grouping="Or" />
           </Action>
           <Action OrderNumber="2" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" VariableOp="SetString" VariableName="当前疫苗" VariableExpression="绿疫苗" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
@@ -65,7 +65,6 @@
           </Action>
         </Actions>
         <Condition Enabled="false" Grouping="Or" />
-        <Conditions />
       </Trigger>
       <Trigger Enabled="true" Sequential="True" Name="三传提示" Id="cdbb5454-fba8-4c9e-a7e4-c258cd67c019" RegularExpression="^.{15}\S+ 14:.{8}:[^:]*:[^:]*:大火炎放射:">
         <Actions>
@@ -141,7 +140,6 @@
           </Action>
         </Actions>
         <Condition Enabled="false" Grouping="Or" />
-        <Conditions />
       </Trigger>
       <Trigger Enabled="true" Sequential="True" Name="终审排队第二次提醒" Id="60e9da74-4060-49d6-aa08-c876dd0f405a" RegularExpression="^.{15}\S+ 14:.{8}:[^:]*:[^:]*:螺旋桨强风:">
         <Actions>
@@ -173,7 +171,6 @@
           </Action>
         </Actions>
         <Condition Enabled="false" Grouping="Or" />
-        <Conditions />
       </Trigger>
     </Triggers>
   </ExportedFolder>

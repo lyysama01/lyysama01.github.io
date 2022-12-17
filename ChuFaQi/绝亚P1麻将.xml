@@ -1,0 +1,662 @@
+<?xml version="1.0"?>
+<TriggernometryExport Version="1">
+  <ExportedFolder Id="67ff19ca-87d4-4c87-8f0b-292fbd50fe3c" Name="lyy魔改麻将" Enabled="true">
+    <Folders>
+      <Folder Id="cefe7398-b468-4c65-8e0c-d7fbcf66f918" Name="(有利)：1256左、3478右；内圈引导、外圈等候" Enabled="true">
+        <Folders />
+        <Triggers>
+          <Trigger Enabled="true" Name="转场2号" Id="4af947ce-a9df-4bcc-93a6-a239d18251f0" RegularExpression="majiang2:2" PrevActionsRefire="Deny" PeriodRefire="Deny" RefirePeriodExpression="200">
+            <Actions>
+              <Action OrderNumber="1" UseTTSTextExpression="左上，跟随" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="2" KeypressType="WindowMessage" KeyPressExpression="${var:防击退快捷键}" KeyPressCode="57" KeyPressWindow="最终幻想XIV" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="KeyPress">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="3" NamedCallbackName="command" NamedCallbackParam="/ac 冲刺" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="4" TextAuraEffect="Bold" TextAuraFontSize="48" TextAuraForeground="White" TextAuraOutline="#8000FF" TextAuraName="up" TextAuraExpression="2号  ←" TextAuraXIniExpression="${var:_AT_麻将字幕X坐标}" TextAuraYIniExpression="${var:_AT_麻将字幕Y坐标}" TextAuraWIniExpression="258" TextAuraHIniExpression="76" TextAuraOIniExpression="100" TextAuraUseOutline="True" TextAuraFontName="幼圆" ActionType="TextAura">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="5" UseTTSTextExpression="." TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS" ExecutionDelayExpression="1500">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="6" KeypressType="WindowMessage" KeyPressExpression="${var:防击退快捷键}" KeyPressCode="57" KeyPressWindow="最终幻想XIV" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="KeyPress">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="7" NamedCallbackName="command" NamedCallbackParam="/ac 冲刺" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="8" UseTTSTextExpression="开始跟随" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS" ExecutionDelayExpression="700">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="9" NamedCallbackName="command" NamedCallbackParam="/ac 冲刺" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="10" KeypressType="WindowMessage" KeyPressExpression="${var:防击退快捷键}" KeyPressCode="57" KeyPressWindow="最终幻想XIV" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="KeyPress">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="11" TextAuraOp="DeactivateAura" TextAuraFontSize="9" TextAuraName="up" TextAuraFontName="宋体" ActionType="TextAura">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="12" UseTTSTextExpression="3秒后停止" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS" ExecutionDelayExpression="1200">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="13" UseTTSTextExpression="." TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="UseTTS" ExecutionDelayExpression="1000">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="14" UseTTSTextExpression="3" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS" ExecutionDelayExpression="1000">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="15" KeypressType="WindowMessage" KeyPressExpression="${var:防击退快捷键}" KeyPressCode="56" KeyPressWindow="最终幻想XIV" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="KeyPress">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="16" KeypressType="WindowMessage" KeyPressExpression="${var:防击退快捷键}" KeyPressCode="56" KeyPressWindow="FINAL FANTASY XIV" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="KeyPress">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="17" UseTTSTextExpression="2" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS" ExecutionDelayExpression="1000">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="18" UseTTSTextExpression="1，停停停" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS" ExecutionDelayExpression="1000">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="19" UseTTSTextExpression="走外圈" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS" ExecutionDelayExpression="2000">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="true" Name="转场4号" Id="d3e88f14-aee7-4b87-be5f-a8b70053cb41" RegularExpression="majiang2:4" PrevActionsRefire="Deny" PeriodRefire="Deny" RefirePeriodExpression="200">
+            <Actions>
+              <Action OrderNumber="1" UseTTSTextExpression="右下，跟随" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="2" KeypressType="WindowMessage" KeyPressExpression="${var:防击退快捷键}" KeyPressCode="57" KeyPressWindow="最终幻想XIV" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="KeyPress">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="3" TextAuraEffect="Bold" TextAuraFontSize="48" TextAuraForeground="White" TextAuraOutline="#8000FF" TextAuraName="up" TextAuraExpression="4号  →" TextAuraXIniExpression="${var:_AT_麻将字幕X坐标}" TextAuraYIniExpression="${var:_AT_麻将字幕Y坐标}" TextAuraWIniExpression="258" TextAuraHIniExpression="76" TextAuraOIniExpression="100" TextAuraUseOutline="True" TextAuraFontName="幼圆" ActionType="TextAura">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="4" UseTTSTextExpression="。" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS" ExecutionDelayExpression="1500">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="5" KeypressType="WindowMessage" KeyPressExpression="${var:防击退快捷键}" KeyPressCode="57" KeyPressWindow="最终幻想XIV" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="KeyPress">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="6" UseTTSTextExpression="4号跟随，开始跟随" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS" ExecutionDelayExpression="700">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="7" KeypressType="WindowMessage" KeyPressExpression="${var:防击退快捷键}" KeyPressCode="57" KeyPressWindow="最终幻想XIV" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="KeyPress">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="8" TextAuraOp="DeactivateAura" TextAuraFontSize="9" TextAuraName="up" TextAuraFontName="宋体" ActionType="TextAura">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="9" UseTTSTextExpression="3秒后停止" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS" ExecutionDelayExpression="5000">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="10" UseTTSTextExpression="。" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="UseTTS" ExecutionDelayExpression="1000">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="11" UseTTSTextExpression="3" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS" ExecutionDelayExpression="1000">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="12" KeypressType="WindowMessage" KeyPressExpression="${var:防击退快捷键}" KeyPressCode="56" KeyPressWindow="最终幻想XIV" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="KeyPress">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="13" KeypressType="WindowMessage" KeyPressExpression="${var:防击退快捷键}" KeyPressCode="56" KeyPressWindow="FINAL FANTASY XIV" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="KeyPress">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="14" UseTTSTextExpression="2" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS" ExecutionDelayExpression="1000">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="15" UseTTSTextExpression="1，停停停" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS" ExecutionDelayExpression="1000">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="16" UseTTSTextExpression="走外圈" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS" ExecutionDelayExpression="2000">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="true" Name="转场1号" Id="0a457e47-9531-49ed-a456-a2ec4a3adc83" RegularExpression="majiang2:1" PrevActionsRefire="Deny" PeriodRefire="Deny" RefirePeriodExpression="200">
+            <Actions>
+              <Action OrderNumber="1" NamedCallbackName="command" NamedCallbackParam="/ac 冲刺" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="2" KeypressType="WindowMessage" KeyPressExpression="${var:防击退快捷键}" KeyPressCode="57" KeyPressWindow="最终幻想XIV" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="KeyPress">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="3" KeypressType="WindowMessage" KeyPressExpression="${var:防击退快捷键}" KeyPressCode="57" KeyPressWindow="FINAL FANTASY XIV" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="KeyPress">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="4" UseTTSTextExpression="左上，领跑" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="5" TextAuraEffect="Bold" TextAuraFontSize="48" TextAuraForeground="White" TextAuraOutline="#8000FF" TextAuraName="up" TextAuraExpression="1号  ←" TextAuraXIniExpression="${var:_AT_麻将字幕X坐标}" TextAuraYIniExpression="${var:_AT_麻将字幕Y坐标}" TextAuraWIniExpression="258" TextAuraHIniExpression="76" TextAuraOIniExpression="100" TextAuraUseOutline="True" TextAuraFontName="幼圆" ActionType="TextAura">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="6" UseTTSTextExpression="。" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS" ExecutionDelayExpression="1500">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="7" NamedCallbackName="command" NamedCallbackParam="/ac 冲刺" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="8" KeypressType="WindowMessage" KeyPressExpression="${var:防击退快捷键}" KeyPressCode="57" KeyPressWindow="最终幻想XIV" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="KeyPress">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="9" KeypressType="WindowMessage" KeyPressExpression="${var:防击退快捷键}" KeyPressCode="57" KeyPressWindow="FINAL FANTASY XIV" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="KeyPress">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="10" UseTTSTextExpression="1号领跑" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS" ExecutionDelayExpression="700">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="11" TextAuraOp="DeactivateAura" TextAuraFontSize="9" TextAuraName="up" TextAuraFontName="宋体" ActionType="TextAura">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="12" UseTTSTextExpression="3秒后停止" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS" ExecutionDelayExpression="1200">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="13" UseTTSTextExpression="。" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS" ExecutionDelayExpression="1000">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="14" UseTTSTextExpression="3" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS" ExecutionDelayExpression="1000">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="15" KeypressType="WindowMessage" KeyPressExpression="${var:防击退快捷键}" KeyPressCode="56" KeyPressWindow="最终幻想XIV" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="KeyPress">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="16" KeypressType="WindowMessage" KeyPressExpression="${var:防击退快捷键}" KeyPressCode="56" KeyPressWindow="FINAL FANTASY XIV" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="KeyPress">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="17" UseTTSTextExpression="2" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS" ExecutionDelayExpression="1000">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="18" UseTTSTextExpression="1，停停停" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS" ExecutionDelayExpression="1000">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="19" UseTTSTextExpression="走外圈" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS" ExecutionDelayExpression="2000">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="true" Name="转场6号" Id="691c29c2-9063-4910-af40-cc5025a78f0e" RegularExpression="majiang2:6" PrevActionsRefire="Deny" PeriodRefire="Deny" RefirePeriodExpression="200">
+            <Actions>
+              <Action OrderNumber="1" UseTTSTextExpression="左上，第二轮跟随" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="2" TextAuraEffect="Bold" TextAuraFontSize="48" TextAuraForeground="White" TextAuraOutline="#8000FF" TextAuraName="up" TextAuraExpression="6号  ←" TextAuraXIniExpression="${var:_AT_麻将字幕X坐标}" TextAuraYIniExpression="${var:_AT_麻将字幕Y坐标}" TextAuraWIniExpression="258" TextAuraHIniExpression="76" TextAuraOIniExpression="100" TextAuraUseOutline="True" TextAuraFontName="幼圆" ActionType="TextAura">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="3" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS" ExecutionDelayExpression="1500">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="4" UseTTSTextExpression="6号，外圈等候" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS" ExecutionDelayExpression="700">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="5" TextAuraOp="DeactivateAura" TextAuraFontSize="9" TextAuraName="up" TextAuraFontName="宋体" ActionType="TextAura">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="6" UseTTSTextExpression="跟随，开始跟随" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS" ExecutionDelayExpression="7700">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="7" KeypressType="WindowMessage" KeyPressExpression="${var:防击退快捷键}" KeyPressCode="57" KeyPressWindow="最终幻想XIV" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="KeyPress">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="8" UseTTSTextExpression="3秒后停止" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS" ExecutionDelayExpression="2500">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="9" KeypressType="WindowMessage" KeyPressExpression="${var:防击退快捷键}" KeyPressCode="57" KeyPressWindow="最终幻想XIV" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="KeyPress">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="10" UseTTSTextExpression="." TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="UseTTS" ExecutionDelayExpression="1000">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="11" UseTTSTextExpression="3" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS" ExecutionDelayExpression="1000">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="12" KeypressType="WindowMessage" KeyPressExpression="${var:防击退快捷键}" KeyPressCode="56" KeyPressWindow="最终幻想XIV" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="KeyPress">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="13" KeypressType="WindowMessage" KeyPressExpression="${var:防击退快捷键}" KeyPressCode="56" KeyPressWindow="FINAL FANTASY XIV" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="KeyPress">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="14" UseTTSTextExpression="2" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS" ExecutionDelayExpression="1000">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="15" UseTTSTextExpression="1，停停停" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS" ExecutionDelayExpression="1000">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="16" UseTTSTextExpression="向前跑" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS" ExecutionDelayExpression="2000">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="true" Name="转场3号" Id="9369c38c-646a-455c-aa12-0c4b1105f85e" RegularExpression="majiang2:3" PrevActionsRefire="Deny" PeriodRefire="Deny" RefirePeriodExpression="200">
+            <Actions>
+              <Action OrderNumber="1" UseTTSTextExpression="右下，领跑" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="2" NamedCallbackName="command" NamedCallbackParam="/ac 冲刺" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="3" KeypressType="WindowMessage" KeyPressExpression="${var:防击退快捷键}" KeyPressCode="57" KeyPressWindow="最终幻想XIV" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="KeyPress">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="4" TextAuraEffect="Bold" TextAuraFontSize="48" TextAuraForeground="White" TextAuraOutline="#8000FF" TextAuraName="up" TextAuraExpression="3号  →" TextAuraXIniExpression="${var:_AT_麻将字幕X坐标}" TextAuraYIniExpression="${var:_AT_麻将字幕Y坐标}" TextAuraWIniExpression="258" TextAuraHIniExpression="76" TextAuraOIniExpression="100" TextAuraUseOutline="True" TextAuraFontName="幼圆" ActionType="TextAura">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="5" UseTTSTextExpression="。" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS" ExecutionDelayExpression="1500">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="6" NamedCallbackName="command" NamedCallbackParam="/ac 冲刺" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="7" KeypressType="WindowMessage" KeyPressExpression="${var:防击退快捷键}" KeyPressCode="57" KeyPressWindow="最终幻想XIV" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="KeyPress">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="8" UseTTSTextExpression="3号领跑，领跑" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS" ExecutionDelayExpression="700">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="9" TextAuraOp="DeactivateAura" TextAuraFontSize="9" TextAuraName="up" TextAuraFontName="宋体" ActionType="TextAura">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="10" UseTTSTextExpression="3秒后踩点" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS" ExecutionDelayExpression="3000">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="11" UseTTSTextExpression="。" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS" ExecutionDelayExpression="1000">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="12" UseTTSTextExpression="3" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS" ExecutionDelayExpression="1000">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="13" KeypressType="WindowMessage" KeyPressExpression="${var:防击退快捷键}" KeyPressCode="56" KeyPressWindow="最终幻想XIV" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="KeyPress">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="14" KeypressType="WindowMessage" KeyPressExpression="${var:防击退快捷键}" KeyPressCode="56" KeyPressWindow="FINAL FANTASY XIV" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="KeyPress">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="15" UseTTSTextExpression="2" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS" ExecutionDelayExpression="1000">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="16" UseTTSTextExpression="1，踩点" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS" ExecutionDelayExpression="1000">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="17" UseTTSTextExpression="走外圈" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS" ExecutionDelayExpression="2000">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="true" Name="转场8号" Id="108918bd-666e-466f-aa1b-f08994a69ef7" RegularExpression="majiang2:8" PrevActionsRefire="Deny" PeriodRefire="Deny" RefirePeriodExpression="200">
+            <Actions>
+              <Action OrderNumber="1" UseTTSTextExpression="右下，第二轮跟随" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="2" TextAuraEffect="Bold" TextAuraFontSize="48" TextAuraForeground="White" TextAuraOutline="#8000FF" TextAuraName="up" TextAuraExpression="8号  →" TextAuraXIniExpression="${var:_AT_麻将字幕X坐标}" TextAuraYIniExpression="${var:_AT_麻将字幕Y坐标}" TextAuraWIniExpression="258" TextAuraHIniExpression="76" TextAuraOIniExpression="100" TextAuraUseOutline="True" TextAuraFontName="幼圆" ActionType="TextAura">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="3" UseTTSTextExpression="。" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS" ExecutionDelayExpression="1500">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="4" UseTTSTextExpression="八号，外圈等候" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS" ExecutionDelayExpression="700">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="5" TextAuraOp="DeactivateAura" TextAuraFontSize="9" TextAuraName="up" TextAuraFontName="宋体" ActionType="TextAura">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="6" UseTTSTextExpression="跟随，远距离跟随" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS" ExecutionDelayExpression="12000">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="7" UseTTSTextExpression="3秒后停止" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS" ExecutionDelayExpression="3000">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="8" UseTTSTextExpression="." TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="UseTTS" ExecutionDelayExpression="1000">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="9" UseTTSTextExpression="3" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS" ExecutionDelayExpression="1000">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="10" KeypressType="WindowMessage" KeyPressExpression="${var:防击退快捷键}" KeyPressCode="56" KeyPressWindow="最终幻想XIV" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="KeyPress">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="11" KeypressType="WindowMessage" KeyPressExpression="${var:防击退快捷键}" KeyPressCode="56" KeyPressWindow="FINAL FANTASY XIV" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="KeyPress">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="12" UseTTSTextExpression="2" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS" ExecutionDelayExpression="1000">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="13" UseTTSTextExpression="1，停停停" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS" ExecutionDelayExpression="1000">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="true" Sequential="True" Name="转场5号" Id="839db4e4-c442-427e-b220-b4fe41142b97" RegularExpression="majiang2:5" PrevActionsRefire="Deny" PeriodRefire="Deny" RefirePeriodExpression="200">
+            <Actions>
+              <Action OrderNumber="1" UseTTSTextExpression="左上，第二轮领跑" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="2" TextAuraEffect="Bold" TextAuraFontSize="48" TextAuraForeground="White" TextAuraOutline="#8000FF" TextAuraName="up" TextAuraExpression="5号  ←" TextAuraXIniExpression="${var:_AT_麻将字幕X坐标}" TextAuraYIniExpression="${var:_AT_麻将字幕Y坐标}" TextAuraWIniExpression="258" TextAuraHIniExpression="76" TextAuraOIniExpression="100" TextAuraUseOutline="True" TextAuraFontName="幼圆" ActionType="TextAura">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="3" UseTTSTextExpression="外圈等候" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS" ExecutionDelayExpression="2000">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="4" UseTTSTextExpression="。" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS" ExecutionDelayExpression="700">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="5" TextAuraOp="DeactivateAura" TextAuraFontSize="9" TextAuraName="up" TextAuraFontName="宋体" ActionType="TextAura">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="6" UseTTSTextExpression="。" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS" ExecutionDelayExpression="4700">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="7" UseTTSTextExpression="内圈领跑" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="UseTTS" ExecutionDelayExpression="1700">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="8" UseTTSTextExpression="内圈领跑，三秒后踩点" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS" ExecutionDelayExpression="2500">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="9" KeypressType="WindowMessage" KeyPressExpression="${var:防击退快捷键}" KeyPressCode="57" KeyPressWindow="最终幻想XIV" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="KeyPress">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="10" UseTTSTextExpression="." TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS" ExecutionDelayExpression="3000">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="11" UseTTSTextExpression="3" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS" ExecutionDelayExpression="1000">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="12" KeypressType="WindowMessage" KeyPressExpression="${var:防击退快捷键}" KeyPressCode="56" KeyPressWindow="最终幻想XIV" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="KeyPress">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="13" KeypressType="WindowMessage" KeyPressExpression="${var:防击退快捷键}" KeyPressCode="56" KeyPressWindow="FINAL FANTASY XIV" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="KeyPress">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="14" UseTTSTextExpression="2" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS" ExecutionDelayExpression="1000">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="15" UseTTSTextExpression="1，踩点" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS" ExecutionDelayExpression="1000">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="true" Name="转场7号" Id="912eafc7-a1a5-43c0-93bf-53768790dc7e" RegularExpression="majiang2:7" PrevActionsRefire="Deny" PeriodRefire="Deny" RefirePeriodExpression="200">
+            <Actions>
+              <Action OrderNumber="1" UseTTSTextExpression="右下，外圈等候" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="2" TextAuraEffect="Bold" TextAuraFontSize="48" TextAuraForeground="White" TextAuraOutline="#8000FF" TextAuraName="up" TextAuraExpression="7号  →" TextAuraXIniExpression="${var:_AT_麻将字幕X坐标}" TextAuraYIniExpression="${var:_AT_麻将字幕Y坐标}" TextAuraWIniExpression="258" TextAuraHIniExpression="76" TextAuraOIniExpression="100" TextAuraUseOutline="True" TextAuraFontName="幼圆" ActionType="TextAura">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="3" UseTTSTextExpression="七号，第二轮领跑" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS" ExecutionDelayExpression="2500">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="4" UseTTSTextExpression="。" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS" ExecutionDelayExpression="700">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="5" TextAuraOp="DeactivateAura" TextAuraFontSize="9" TextAuraName="up" TextAuraFontName="宋体" ActionType="TextAura">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="6" UseTTSTextExpression="等待去下一炸中心点" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS" ExecutionDelayExpression="6000">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="7" UseTTSTextExpression="内圈领跑" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS" ExecutionDelayExpression="2000">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="8" UseTTSTextExpression="三炸后踩点" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS" ExecutionDelayExpression="2000">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="9" UseTTSTextExpression="." TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS" ExecutionDelayExpression="1000">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="10" UseTTSTextExpression="3" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS" ExecutionDelayExpression="1000">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="11" KeypressType="WindowMessage" KeyPressExpression="${var:防击退快捷键}" KeyPressCode="56" KeyPressWindow="最终幻想XIV" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="KeyPress">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="12" KeypressType="WindowMessage" KeyPressExpression="${var:防击退快捷键}" KeyPressCode="56" KeyPressWindow="FINAL FANTASY XIV" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="KeyPress">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="13" UseTTSTextExpression="2" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS" ExecutionDelayExpression="2000">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="14" UseTTSTextExpression="1，踩点" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS" ExecutionDelayExpression="2000">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+        </Triggers>
+      </Folder>
+      <Folder Id="05e5ec13-ad94-44b6-b46e-4ef441ead8a8" Name="麻将" Enabled="true">
+        <Folders />
+        <Triggers>
+          <Trigger Enabled="true" Name="麻将转换" Id="ebf63f9e-7e0f-483c-922c-ae17611ced7f" RegularExpression="^.{14} (?:\w+ )14:.{8}:[^:]*:4826:">
+            <Actions>
+              <Action OrderNumber="1" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerOp="EnableTrigger" TriggerId="26cb0eed-1238-4353-b3a5-efffbc9a7fda" ActionType="Trigger">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="true" Name="圈圈计数器（改）" Id="c2540c47-f29a-432c-ab7a-36895d0cc55b" RegularExpression="4830:(鹰式破坏炮|Hawk Blaster|ホークブラスター):" PeriodRefire="Deny" RefirePeriodExpression="60000">
+            <Actions>
+              <Action OrderNumber="1" TextAuraAlignment="MiddleLeft" TextAuraFontSize="48" TextAuraForeground="White" TextAuraOutline="Black" TextAuraName="圈圈计数" TextAuraExpression="　②③④中" TextAuraXIniExpression="1250" TextAuraYIniExpression="401" TextAuraWIniExpression="755" TextAuraHIniExpression="124" TextAuraOIniExpression="100" TextAuraUseOutline="True" TextAuraFontName="方正喵鸣" ActionType="TextAura">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="2" TextAuraAlignment="MiddleLeft" TextAuraFontSize="48" TextAuraForeground="White" TextAuraOutline="Black" TextAuraName="圈圈计数2" TextAuraExpression="⑥⑦⑧⑨中" TextAuraXIniExpression="1250" TextAuraYIniExpression="496" TextAuraWIniExpression="755" TextAuraHIniExpression="85" TextAuraOIniExpression="100" TextAuraUseOutline="True" TextAuraFontName="方正喵鸣" ActionType="TextAura">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="3" TextAuraAlignment="MiddleLeft" TextAuraFontSize="48" TextAuraForeground="White" TextAuraOutline="Fuchsia" TextAuraName="圈圈计数3" TextAuraExpression="①" TextAuraXIniExpression="1250" TextAuraYIniExpression="401" TextAuraWIniExpression="755" TextAuraHIniExpression="124" TextAuraOIniExpression="100" TextAuraUseOutline="True" TextAuraFontName="方正喵鸣" ActionType="TextAura">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="4" TextAuraAlignment="MiddleLeft" TextAuraFontSize="48" TextAuraForeground="White" TextAuraOutline="Black" TextAuraName="圈圈计数" TextAuraExpression="①　③④中" TextAuraXIniExpression="1250" TextAuraYIniExpression="401" TextAuraWIniExpression="755" TextAuraHIniExpression="124" TextAuraOIniExpression="100" TextAuraUseOutline="True" TextAuraFontName="方正喵鸣" ActionType="TextAura" ExecutionDelayExpression="2000">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="5" TextAuraAlignment="MiddleLeft" TextAuraFontSize="48" TextAuraForeground="White" TextAuraOutline="Fuchsia" TextAuraName="圈圈计数3" TextAuraExpression="　②" TextAuraXIniExpression="1250" TextAuraYIniExpression="401" TextAuraWIniExpression="755" TextAuraHIniExpression="124" TextAuraOIniExpression="100" TextAuraUseOutline="True" TextAuraFontName="方正喵鸣" ActionType="TextAura">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="6" TextAuraAlignment="MiddleLeft" TextAuraFontSize="48" TextAuraForeground="White" TextAuraOutline="Black" TextAuraName="圈圈计数" TextAuraExpression="①②　④中" TextAuraXIniExpression="1250" TextAuraYIniExpression="401" TextAuraWIniExpression="755" TextAuraHIniExpression="124" TextAuraOIniExpression="100" TextAuraUseOutline="True" TextAuraFontName="方正喵鸣" ActionType="TextAura" ExecutionDelayExpression="2000">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="7" TextAuraAlignment="MiddleLeft" TextAuraFontSize="48" TextAuraForeground="White" TextAuraOutline="Fuchsia" TextAuraName="圈圈计数3" TextAuraExpression="　　③" TextAuraXIniExpression="1250" TextAuraYIniExpression="401" TextAuraWIniExpression="755" TextAuraHIniExpression="124" TextAuraOIniExpression="100" TextAuraUseOutline="True" TextAuraFontName="方正喵鸣" ActionType="TextAura">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="8" TextAuraAlignment="MiddleLeft" TextAuraFontSize="48" TextAuraForeground="White" TextAuraOutline="Black" TextAuraName="圈圈计数" TextAuraExpression="①②③　中" TextAuraXIniExpression="1250" TextAuraYIniExpression="401" TextAuraWIniExpression="755" TextAuraHIniExpression="124" TextAuraOIniExpression="100" TextAuraUseOutline="True" TextAuraFontName="方正喵鸣" ActionType="TextAura" ExecutionDelayExpression="2000">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="9" TextAuraAlignment="MiddleLeft" TextAuraFontSize="48" TextAuraForeground="White" TextAuraOutline="Fuchsia" TextAuraName="圈圈计数3" TextAuraExpression="　　　④" TextAuraXIniExpression="1250" TextAuraYIniExpression="401" TextAuraWIniExpression="755" TextAuraHIniExpression="124" TextAuraOIniExpression="100" TextAuraUseOutline="True" TextAuraFontName="方正喵鸣" ActionType="TextAura">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="10" TextAuraAlignment="MiddleLeft" TextAuraFontSize="48" TextAuraForeground="White" TextAuraOutline="Black" TextAuraName="圈圈计数" TextAuraExpression="①②③④" TextAuraXIniExpression="1250" TextAuraYIniExpression="401" TextAuraWIniExpression="755" TextAuraHIniExpression="124" TextAuraOIniExpression="100" TextAuraUseOutline="True" TextAuraFontName="方正喵鸣" ActionType="TextAura" ExecutionDelayExpression="2000">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="11" TextAuraAlignment="MiddleLeft" TextAuraFontSize="48" TextAuraForeground="White" TextAuraOutline="Fuchsia" TextAuraName="圈圈计数3" TextAuraExpression="　　　　中" TextAuraXIniExpression="1250" TextAuraYIniExpression="401" TextAuraWIniExpression="755" TextAuraHIniExpression="124" TextAuraOIniExpression="100" TextAuraUseOutline="True" TextAuraFontName="方正喵鸣" ActionType="TextAura">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="12" TextAuraAlignment="MiddleLeft" TextAuraFontSize="48" TextAuraForeground="White" TextAuraOutline="Black" TextAuraName="圈圈计数" TextAuraExpression="①②③④中" TextAuraXIniExpression="1250" TextAuraYIniExpression="401" TextAuraWIniExpression="755" TextAuraHIniExpression="124" TextAuraOIniExpression="100" TextAuraUseOutline="True" TextAuraFontName="方正喵鸣" ActionType="TextAura" ExecutionDelayExpression="2000">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="13" TextAuraOp="DeactivateAura" TextAuraAlignment="MiddleLeft" TextAuraFontSize="36" TextAuraForeground="Red" TextAuraOutline="#FF8000" TextAuraName="圈圈计数3" TextAuraExpression="        中" TextAuraXIniExpression="953" TextAuraYIniExpression="177" TextAuraWIniExpression="755" TextAuraHIniExpression="124" TextAuraOIniExpression="100" TextAuraUseOutline="True" TextAuraFontName="宋体" ActionType="TextAura">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="14" TextAuraAlignment="MiddleLeft" TextAuraFontSize="48" TextAuraForeground="White" TextAuraOutline="Black" TextAuraName="圈圈计数2" TextAuraExpression="　⑦⑧⑨中" TextAuraXIniExpression="1250" TextAuraYIniExpression="496" TextAuraWIniExpression="755" TextAuraHIniExpression="85" TextAuraOIniExpression="100" TextAuraUseOutline="True" TextAuraFontName="方正喵鸣" ActionType="TextAura">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="15" TextAuraAlignment="MiddleLeft" TextAuraFontSize="48" TextAuraForeground="White" TextAuraOutline="Fuchsia" TextAuraName="圈圈计数4" TextAuraExpression="⑥" TextAuraXIniExpression="1250" TextAuraYIniExpression="496" TextAuraWIniExpression="755" TextAuraHIniExpression="85" TextAuraOIniExpression="100" TextAuraUseOutline="True" TextAuraFontName="方正喵鸣" ActionType="TextAura">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="16" TextAuraAlignment="MiddleLeft" TextAuraFontSize="48" TextAuraForeground="White" TextAuraOutline="Black" TextAuraName="圈圈计数2" TextAuraExpression="⑥　⑧⑨中" TextAuraXIniExpression="1250" TextAuraYIniExpression="496" TextAuraWIniExpression="755" TextAuraHIniExpression="85" TextAuraOIniExpression="100" TextAuraUseOutline="True" TextAuraFontName="方正喵鸣" ActionType="TextAura" ExecutionDelayExpression="2000">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="17" TextAuraAlignment="MiddleLeft" TextAuraFontSize="48" TextAuraForeground="White" TextAuraOutline="Fuchsia" TextAuraName="圈圈计数4" TextAuraExpression="　⑦" TextAuraXIniExpression="1250" TextAuraYIniExpression="496" TextAuraWIniExpression="755" TextAuraHIniExpression="85" TextAuraOIniExpression="100" TextAuraUseOutline="True" TextAuraFontName="方正喵鸣" ActionType="TextAura">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="18" TextAuraAlignment="MiddleLeft" TextAuraFontSize="48" TextAuraForeground="White" TextAuraOutline="Black" TextAuraName="圈圈计数2" TextAuraExpression="⑥⑦　⑨中" TextAuraXIniExpression="1250" TextAuraYIniExpression="496" TextAuraWIniExpression="755" TextAuraHIniExpression="85" TextAuraOIniExpression="100" TextAuraUseOutline="True" TextAuraFontName="方正喵鸣" ActionType="TextAura" ExecutionDelayExpression="2000">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="19" TextAuraAlignment="MiddleLeft" TextAuraFontSize="48" TextAuraForeground="White" TextAuraOutline="Fuchsia" TextAuraName="圈圈计数4" TextAuraExpression="　　⑧" TextAuraXIniExpression="1250" TextAuraYIniExpression="496" TextAuraWIniExpression="755" TextAuraHIniExpression="85" TextAuraOIniExpression="100" TextAuraUseOutline="True" TextAuraFontName="方正喵鸣" ActionType="TextAura">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="20" TextAuraAlignment="MiddleLeft" TextAuraFontSize="48" TextAuraForeground="White" TextAuraOutline="Black" TextAuraName="圈圈计数2" TextAuraExpression="⑥⑦⑧　中" TextAuraXIniExpression="1250" TextAuraYIniExpression="496" TextAuraWIniExpression="755" TextAuraHIniExpression="85" TextAuraOIniExpression="100" TextAuraUseOutline="True" TextAuraFontName="方正喵鸣" ActionType="TextAura" ExecutionDelayExpression="2000">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="21" TextAuraAlignment="MiddleLeft" TextAuraFontSize="48" TextAuraForeground="White" TextAuraOutline="Fuchsia" TextAuraName="圈圈计数4" TextAuraExpression="　　　⑨" TextAuraXIniExpression="1250" TextAuraYIniExpression="496" TextAuraWIniExpression="755" TextAuraHIniExpression="85" TextAuraOIniExpression="100" TextAuraUseOutline="True" TextAuraFontName="方正喵鸣" ActionType="TextAura">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="22" TextAuraAlignment="MiddleLeft" TextAuraFontSize="48" TextAuraForeground="White" TextAuraOutline="Black" TextAuraName="圈圈计数2" TextAuraExpression="⑥⑦⑧⑨" TextAuraXIniExpression="1250" TextAuraYIniExpression="496" TextAuraWIniExpression="755" TextAuraHIniExpression="85" TextAuraOIniExpression="100" TextAuraUseOutline="True" TextAuraFontName="方正喵鸣" ActionType="TextAura" ExecutionDelayExpression="2000">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="23" TextAuraAlignment="MiddleLeft" TextAuraFontSize="48" TextAuraForeground="White" TextAuraOutline="Fuchsia" TextAuraName="圈圈计数4" TextAuraExpression="　　　　中" TextAuraXIniExpression="1250" TextAuraYIniExpression="496" TextAuraWIniExpression="755" TextAuraHIniExpression="85" TextAuraOIniExpression="100" TextAuraUseOutline="True" TextAuraFontName="方正喵鸣" ActionType="TextAura">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="24" TextAuraOp="DeactivateAllAura" TextAuraAlignment="MiddleLeft" TextAuraFontSize="36" TextAuraForeground="White" TextAuraOutline="Black" TextAuraName="圈圈计数2" TextAuraExpression="⑥⑦⑧⑨" TextAuraXIniExpression="955" TextAuraYIniExpression="266" TextAuraWIniExpression="755" TextAuraHIniExpression="55" TextAuraOIniExpression="100" TextAuraUseOutline="True" TextAuraFontName="宋体" ActionType="TextAura" ExecutionDelayExpression="2000">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="false" Name="麻将1" Id="26cb0eed-1238-4353-b3a5-efffbc9a7fda" RegularExpression="^.{14} (?:\w+ )1B:1[0-9A-Z]{7}:(?&lt;player&gt;.*?):(?:[^:]*:){2}(?&lt;shadow_id&gt;.*?):0000:0000:0000">
+            <Actions>
+              <Action OrderNumber="1" VariableOp="SetNumeric" VariableName="shadow_id_min" VariableExpression="hex2dec(${shadow_id})" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable" Asynchronous="False">
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${var:shadow_count}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                </Condition>
+              </Action>
+              <Action OrderNumber="2" VariableOp="SetNumeric" VariableName="shadow_id[${player}]" VariableExpression="hex2dec(${shadow_id})" TextAuraFontSize="9" TextAuraFontName="??" ActionType="Variable" Asynchronous="False">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="3" VariableOp="SetString" VariableName="shadow_name[${numeric:hex2dec(${shadow_id})}]" VariableExpression="${player}" TextAuraFontSize="9" TextAuraFontName="??" ActionType="Variable" Asynchronous="False">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="4" VariableOp="SetNumeric" VariableName="shadow_count" VariableExpression="${var:shadow_count}+1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable" Asynchronous="False">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="5" LogMessageText="majiang2:1" LogProcess="True" MessageBoxText="${var:shadow_name[${numeric:${var:shadow_id_max}-7}]}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="LogMessage" ExecutionDelayExpression="200" RefireRequeue="False">
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${var:shadow_name[${numeric:${var:shadow_id_min}}]}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                </Condition>
+              </Action>
+              <Action OrderNumber="6" LogMessageText="majiang2:2" LogProcess="True" MessageBoxText="${var:shadow_name[${numeric:${var:shadow_id_max}-7}]}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="LogMessage" RefireRequeue="False">
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${var:shadow_name[${numeric:${var:shadow_id_min}+1}]}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                </Condition>
+              </Action>
+              <Action OrderNumber="7" LogMessageText="majiang2:3" LogProcess="True" MessageBoxText="${var:shadow_name[${numeric:${var:shadow_id_max}-7}]}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="LogMessage" RefireRequeue="False">
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${var:shadow_name[${numeric:${var:shadow_id_min}+2}]}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                </Condition>
+              </Action>
+              <Action OrderNumber="8" LogMessageText="majiang2:4" LogProcess="True" MessageBoxText="${var:shadow_name[${numeric:${var:shadow_id_max}-7}]}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="LogMessage" RefireRequeue="False">
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${var:shadow_name[${numeric:${var:shadow_id_min}+3}]}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                </Condition>
+              </Action>
+              <Action OrderNumber="9" LogMessageText="majiang2:5" LogProcess="True" MessageBoxText="${var:shadow_name[${numeric:${var:shadow_id_max}-7}]}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="LogMessage" RefireRequeue="False">
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${var:shadow_name[${numeric:${var:shadow_id_min}+4}]}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                </Condition>
+              </Action>
+              <Action OrderNumber="10" LogMessageText="majiang2:6" LogProcess="True" MessageBoxText="${var:shadow_name[${numeric:${var:shadow_id_max}-7}]}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="LogMessage" RefireRequeue="False">
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${var:shadow_name[${numeric:${var:shadow_id_min}+5}]}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                </Condition>
+              </Action>
+              <Action OrderNumber="11" LogMessageText="majiang2:7" LogProcess="True" MessageBoxText="${var:shadow_name[${numeric:${var:shadow_id_max}-7}]}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="LogMessage" RefireRequeue="False">
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${var:shadow_name[${numeric:${var:shadow_id_min}+6}]}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                </Condition>
+              </Action>
+              <Action OrderNumber="12" LogMessageText="majiang2:8" LogProcess="True" MessageBoxText="${var:shadow_name[${numeric:${var:shadow_id_max}-7}]}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="LogMessage" RefireRequeue="False">
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${var:shadow_name[${numeric:${var:shadow_id_min}+7}]}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                </Condition>
+              </Action>
+              <Action OrderNumber="13" VariableName="shadow_id[${player}]" VariableExpression="hex2dec(${shadow_id})" TextAuraFontSize="9" TextAuraFontName="??" ActionType="Variable" ExecutionDelayExpression="1500" Asynchronous="False">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="14" VariableName="shadow_id[${player}]" VariableExpression="hex2dec(${shadow_id})" TextAuraFontSize="9" TextAuraFontName="??" ActionType="Variable" Asynchronous="False">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="15" VariableName="shadow_name[${numeric:hex2dec(${shadow_id})}]" VariableExpression="${player}" TextAuraFontSize="9" TextAuraFontName="??" ActionType="Variable" Asynchronous="False">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="16" VariableName="shadow_count" VariableExpression="${var:shadow_count}+1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable" Asynchronous="False">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="17" TextAuraOp="DeactivateAllAura" TextAuraAlignment="MiddleLeft" TextAuraFontSize="36" TextAuraForeground="White" TextAuraOutline="Black" TextAuraName="圈圈计数2" TextAuraExpression="⑥⑦⑧⑨" TextAuraXIniExpression="955" TextAuraYIniExpression="266" TextAuraWIniExpression="755" TextAuraHIniExpression="55" TextAuraOIniExpression="100" TextAuraUseOutline="True" TextAuraFontName="宋体" TriggerOp="DisableTrigger" TriggerId="26cb0eed-1238-4353-b3a5-efffbc9a7fda" ActionType="Trigger" ExecutionDelayExpression="10000">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="And" />
+          </Trigger>
+        </Triggers>
+      </Folder>
+    </Folders>
+    <Triggers>
+      <Trigger Enabled="true" Name="端口设置" Id="679c26b4-a104-4ead-830e-84430220d67e" RegularExpression="“亚历山大绝境战”任务开始。|「絶アレキサンダー討滅戦」の攻略を開始した。|The Epic of Alexander (Ultimate) has begun." Description="需要改快捷键要打开分组一个一个改 修改那个向最终幻想XIV发送的数字keycode&#xD;&#xA;下面是键位对应的keycode&#xD;&#xA;&#xD;&#xA;键码值(keyCode)&#xD;&#xA;A:65 B:66 C:67 D:68 E:69 F:70 G:71 H:72 I:73 J:74 K:75 L:76 M:77&#xD;&#xA;N:78 O:79 P:80 Q:81 R:82 S:83 T:84 U:85 V:86 W:87 X:88 Y:89 Z:90&#xD;&#xA;大键盘上的数字&#xD;&#xA;0:48 1:49 2:50 3:51 4:52 5:53 6:54 7:55 8:56 9:57&#xD;&#xA;小键盘上的数字&#xD;&#xA;0:96 1:97 2:98 3:99 4:100 5:101 6:102 7:103 8:104 9:105&#xD;&#xA;F1-F12&#xD;&#xA;F1:112 F2:113 F3:114 F4:115 F5:116 F6:117 F7:118 F8:l119 F9:120 F10:121 F11:122 F12:123">
+        <Actions>
+          <Action OrderNumber="1" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerId="6b053af5-6a3d-404b-9c5e-3149ff6b031b" TriggerForce="true" ActionType="Trigger" Asynchronous="False">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+        </Actions>
+        <Condition Enabled="false" Grouping="Or" />
+      </Trigger>
+      <Trigger Enabled="true" Name="* 麻将字幕设置 - 显示坐标" Id="bba91e1b-555e-4a1b-9be7-d46ed50a5ece" RegularExpression="">
+        <Actions>
+          <Action OrderNumber="1" VariableOp="SetNumeric" VariableName="_AT_麻将字幕X坐标" VariableExpression="1100" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="2" VariableOp="SetNumeric" VariableName="_AT_麻将字幕Y坐标" VariableExpression="290" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="3" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="UseTTS" Description="关于设置坐标：请双击或选中编辑下方的“激活命中正则表达式 xxxxxxx (测试获取坐标用)”" DescriptionOverride="True">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="4" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="UseTTS" Description="打开编辑页面后鼠标滚轮或拖到最下面点“使用即时设置”" DescriptionOverride="True">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="5" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="UseTTS" Description="在新弹出的文字设置拖动到你想要的地方，然后右键“保存更改”" DescriptionOverride="True">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="6" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="UseTTS" Description="就可以获取到刚才设置的X坐标与Y坐标，填入最上方的“设置变量”表达式的值" DescriptionOverride="True">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="7" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="UseTTS" Description="最后点test开启显示触发器勾选一下即可" DescriptionOverride="True">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="8" AuraImageMode="CenterImage" AuraName="测试获取坐标用" AuraImage="https://i0.hdslb.com/bfs/album/8530587143969936c87f1d34bbafc5c9055107ff.png" AuraXIniExpression="1541" AuraYIniExpression="642" AuraWIniExpression="152" AuraHIniExpression="28" AuraOIniExpression="100" TextAuraEffect="Bold" TextAuraFontSize="48" TextAuraForeground="White" TextAuraOutline="Fuchsia" TextAuraName="测试获取坐标用" TextAuraExpression="1号  ←" TextAuraXIniExpression="1671" TextAuraYIniExpression="772" TextAuraWIniExpression="400" TextAuraHIniExpression="200" TextAuraOIniExpression="100" TextAuraUseOutline="True" TextAuraFontName="微软雅黑" Enabled="False" ActionType="TextAura" Asynchronous="False">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="9" AuraOp="DeactivateAura" AuraName="测试获取坐标用" AuraImage="https://i0.hdslb.com/bfs/album/8530587143969936c87f1d34bbafc5c9055107ff.png" AuraXIniExpression="841" AuraYIniExpression="663" AuraWIniExpression="152" AuraHIniExpression="28" AuraOIniExpression="100" TextAuraOp="DeactivateAura" TextAuraFontSize="9" TextAuraName="测试获取坐标用" TextAuraFontName="宋体" ActionType="TextAura" Asynchronous="False">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+        </Actions>
+        <Condition Enabled="false" Grouping="Or" />
+      </Trigger>
+      <Trigger Enabled="true" Name="团灭初始化" Id="5ca0853b-141a-4c31-80c5-0f8c8ad9a061" RegularExpression="^.{14} 21:.{8}:400000(03|1[026])|^.{14} Director 21:.{8}:400000(03|1[026])" RefirePeriodExpression="5000">
+        <Actions>
+          <Action OrderNumber="1" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerOp="CancelAllTrigger" ActionType="Trigger">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="2" TextAuraOp="DeactivateAllAura" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="TextAura">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="3" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerId="bba91e1b-555e-4a1b-9be7-d46ed50a5ece" TriggerForce="true" ActionType="Trigger" Asynchronous="False">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="4" PlaySoundFileExpression="C:\Users\DIY\Desktop\语音包\nyan.wav" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="EndEncounter">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+        </Actions>
+        <Condition Enabled="false" Grouping="Or" />
+      </Trigger>
+    </Triggers>
+  </ExportedFolder>
+</TriggernometryExport>

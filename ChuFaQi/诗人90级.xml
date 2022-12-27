@@ -1,0 +1,718 @@
+<?xml version="1.0"?>
+<TriggernometryExport Version="1">
+  <ExportedFolder Id="9c89424c-abac-4d90-87a2-9881546732e7" Name="吟游诗人" Enabled="true">
+    <Folders>
+      <Folder Id="a6a46efa-5fe3-6aaa-8253-bf4f57bee4b0" Name="强力-辉煌-伶牙俐齿 1 1" Enabled="true">
+        <Folders>
+          <Folder Id="7317acef-698c-44e5-b981-67105da4101e" Name="唱歌CD变量2.0" Enabled="true">
+            <Folders />
+            <Triggers>
+              <Trigger Enabled="true" Sequential="True" Name="01放浪神的小步舞曲 进入CD" Id="9eb5f670-bb2a-45ef-b996-9d74f8d3fb31" RegularExpression="^.{15}\S+ (15|16):1.{7}:(?&lt;player&gt;[^:]+):[^:]*:放浪神的小步舞曲:" PrevActions="Interrupt">
+                <Actions>
+                  <Action OrderNumber="1" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" VariableOp="SetNumeric" VariableName="唱歌CD总和" VariableExpression="${var:唱歌CD总和}+4" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                  <Action OrderNumber="2" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" VariableOp="SetNumeric" VariableName="唱歌CD总和" VariableExpression="${var:唱歌CD总和}-4" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable" ExecutionDelayExpression="120000">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="true" Grouping="And">
+                  <ConditionSingle Enabled="true" ExpressionL="${player}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                  <ConditionSingle Enabled="false" ExpressionL="${var:唱歌总和}" ExpressionTypeL="String" ExpressionR="7" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                </Condition>
+              </Trigger>
+              <Trigger Enabled="true" Sequential="True" Name="03军神的赞美歌 进入CD" Id="2a1bb068-2afa-4c91-83a4-3ab9ca3a53ce" RegularExpression="^.{15}\S+ (15|16):1.{7}:(?&lt;player&gt;[^:]+):[^:]*:军神的赞美歌:" PrevActions="Interrupt">
+                <Actions>
+                  <Action OrderNumber="1" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" VariableOp="SetNumeric" VariableName="唱歌CD总和" VariableExpression="${var:唱歌CD总和}+2" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                  <Action OrderNumber="2" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" VariableOp="SetNumeric" VariableName="唱歌CD总和" VariableExpression="${var:唱歌CD总和}-2" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable" ExecutionDelayExpression="120000">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="true" Grouping="And">
+                  <ConditionSingle Enabled="true" ExpressionL="${player}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                  <ConditionSingle Enabled="false" ExpressionL="${var:唱歌总和}" ExpressionTypeL="String" ExpressionR="7" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                </Condition>
+              </Trigger>
+              <Trigger Enabled="true" Sequential="True" Name="02贤者的叙事谣 进入CD" Id="0f6115a1-f2a4-43c3-90b6-85df61780817" RegularExpression="^.{15}\S+ (15|16):1.{7}:(?&lt;player&gt;[^:]+):[^:]*:贤者的叙事谣:" PrevActions="Interrupt">
+                <Actions>
+                  <Action OrderNumber="1" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" VariableOp="SetNumeric" VariableName="唱歌CD总和" VariableExpression="${var:唱歌CD总和}+1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                  <Action OrderNumber="2" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" VariableOp="SetNumeric" VariableName="唱歌CD总和" VariableExpression="${var:唱歌CD总和}-1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable" ExecutionDelayExpression="120000">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="true" Grouping="And">
+                  <ConditionSingle Enabled="true" ExpressionL="${player}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                  <ConditionSingle Enabled="false" ExpressionL="${var:唱歌总和}" ExpressionTypeL="String" ExpressionR="7" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                </Condition>
+              </Trigger>
+              <Trigger Enabled="true" Sequential="True" Name="01放浪神的小步舞曲 43秒切歌" Id="00f07960-c0a9-4a78-be94-0b7674f10097" RegularExpression="^.{15}\S+ (15|16):1.{7}:(?&lt;player&gt;[^:]+):[^:]*:放浪神的小步舞曲:" PrevActions="Interrupt">
+                <Actions>
+                  <Action OrderNumber="1" NamedCallbackName="command" NamedCallbackParam="/ac 贤者的叙事谣" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" VariableOp="SetString" VariableName="下一首歌" VariableExpression="放浪神的小步舞曲X" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                    <Condition Enabled="false" Grouping="Or">
+                      <ConditionSingle Enabled="true" ExpressionL="${var:唱歌CD总和}" ExpressionTypeL="String" ExpressionR="4" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                      <ConditionSingle Enabled="true" ExpressionL="${var:唱歌CD总和}" ExpressionTypeL="String" ExpressionR="6" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                      <ConditionSingle Enabled="false" ExpressionL="${var:唱歌CD总和}" ExpressionTypeL="String" ExpressionR="0" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                    </Condition>
+                  </Action>
+                  <Action OrderNumber="2" NamedCallbackName="command" NamedCallbackParam="/ac 贤者的叙事谣" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" VariableOp="SetString" VariableName="下一首歌" VariableExpression="贤者的叙事谣" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable" ExecutionDelayExpression="43000">
+                    <Condition Enabled="true" Grouping="Or">
+                      <ConditionSingle Enabled="true" ExpressionL="${var:唱歌CD总和}" ExpressionTypeL="Numeric" ExpressionR="4" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                      <ConditionSingle Enabled="true" ExpressionL="${var:唱歌CD总和}" ExpressionTypeL="Numeric" ExpressionR="6" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                      <ConditionSingle Enabled="false" ExpressionL="${var:唱歌CD总和}" ExpressionTypeL="String" ExpressionR="0" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                    </Condition>
+                  </Action>
+                  <Action OrderNumber="3" NamedCallbackName="command" NamedCallbackParam="/ac 军神的赞美歌" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" VariableOp="SetString" VariableName="下一首歌" VariableExpression="军神的赞美歌" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                    <Condition Enabled="true" Grouping="Or">
+                      <ConditionSingle Enabled="false" ExpressionL="${var:唱歌CD总和}" ExpressionTypeL="String" ExpressionR="4" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                      <ConditionSingle Enabled="true" ExpressionL="${var:唱歌CD总和}" ExpressionTypeL="Numeric" ExpressionR="5" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                      <ConditionSingle Enabled="false" ExpressionL="${var:唱歌CD总和}" ExpressionTypeL="String" ExpressionR="0" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                    </Condition>
+                  </Action>
+                  <Action OrderNumber="4" NamedCallbackName="command" NamedCallbackParam="/hotbat set 放浪神的小步舞曲 1 1" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" VariableOp="SetString" VariableName="下一首歌" VariableExpression="放浪神的小步舞曲" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                    <Condition Enabled="true" Grouping="Or">
+                      <ConditionSingle Enabled="false" ExpressionL="${var:唱歌CD总和}" ExpressionTypeL="String" ExpressionR="0" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                      <ConditionSingle Enabled="true" ExpressionL="${var:唱歌CD总和}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                      <ConditionSingle Enabled="true" ExpressionL="${var:唱歌CD总和}" ExpressionTypeL="Numeric" ExpressionR="7" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                    </Condition>
+                  </Action>
+                </Actions>
+                <Condition Enabled="true" Grouping="And">
+                  <ConditionSingle Enabled="true" ExpressionL="${player}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                  <ConditionSingle Enabled="false" ExpressionL="${var:唱歌总和}" ExpressionTypeL="String" ExpressionR="7" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                </Condition>
+              </Trigger>
+              <Trigger Enabled="true" Sequential="True" Name="03军神的赞美歌 43秒切歌" Id="e1cd2bdd-4480-401f-a722-4cc1275b0595" RegularExpression="^.{15}\S+ (15|16):1.{7}:(?&lt;player&gt;[^:]+):[^:]*:军神的赞美歌:" PrevActions="Interrupt">
+                <Actions>
+                  <Action OrderNumber="1" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="SystemBeep">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                  <Action OrderNumber="2" NamedCallbackName="command" NamedCallbackParam="/ac 军神的赞美歌" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" VariableOp="SetString" VariableName="下一首歌" VariableExpression="放浪神的小步舞曲" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable" ExecutionDelayExpression="43000">
+                    <Condition Enabled="true" Grouping="Or">
+                      <ConditionSingle Enabled="true" ExpressionL="${var:唱歌CD总和}" ExpressionTypeL="Numeric" ExpressionR="2" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                      <ConditionSingle Enabled="true" ExpressionL="${var:唱歌CD总和}" ExpressionTypeL="Numeric" ExpressionR="3" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                      <ConditionSingle Enabled="false" ExpressionL="${var:唱歌CD总和}" ExpressionTypeL="String" ExpressionR="0" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                      <ConditionSingle Enabled="true" ExpressionL="${var:唱歌CD总和}" ExpressionTypeL="Numeric" ExpressionR="7" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                      <ConditionSingle Enabled="true" ExpressionL="${var:唱歌CD总和}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                    </Condition>
+                  </Action>
+                  <Action OrderNumber="3" NamedCallbackName="command" NamedCallbackParam="/ac 军神的赞美歌" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" VariableOp="SetString" VariableName="下一首歌" VariableExpression="贤者的叙事谣" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                    <Condition Enabled="true" Grouping="Or">
+                      <ConditionSingle Enabled="false" ExpressionL="${var:唱歌CD总和}" ExpressionTypeL="String" ExpressionR="4" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                      <ConditionSingle Enabled="true" ExpressionL="${var:唱歌CD总和}" ExpressionTypeL="Numeric" ExpressionR="6" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                      <ConditionSingle Enabled="false" ExpressionL="${var:唱歌CD总和}" ExpressionTypeL="String" ExpressionR="0" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                    </Condition>
+                  </Action>
+                </Actions>
+                <Condition Enabled="true" Grouping="And">
+                  <ConditionSingle Enabled="true" ExpressionL="${player}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                  <ConditionSingle Enabled="false" ExpressionL="${var:唱歌总和}" ExpressionTypeL="String" ExpressionR="7" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                </Condition>
+              </Trigger>
+              <Trigger Enabled="true" Sequential="True" Name="02贤者的叙事谣 34秒切歌" Id="05742a85-7d50-422f-b578-4ec939cfd692" RegularExpression="^.{15}\S+ (15|16):1.{7}:(?&lt;player&gt;[^:]+):[^:]*:贤者的叙事谣:" PrevActions="Interrupt">
+                <Actions>
+                  <Action OrderNumber="1" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="SystemBeep">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                  <Action OrderNumber="2" NamedCallbackName="command" NamedCallbackParam="/hotbat set 放浪神的小步舞曲 1 1" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" VariableOp="SetString" VariableName="下一首歌" VariableExpression="放浪神的小步舞曲" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable" ExecutionDelayExpression="34000">
+                    <Condition Enabled="true" Grouping="Or">
+                      <ConditionSingle Enabled="true" ExpressionL="${var:唱歌CD总和}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                      <ConditionSingle Enabled="true" ExpressionL="${var:唱歌CD总和}" ExpressionTypeL="Numeric" ExpressionR="3" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                      <ConditionSingle Enabled="false" ExpressionL="${var:唱歌CD总和}" ExpressionTypeL="String" ExpressionR="0" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                      <ConditionSingle Enabled="true" ExpressionL="${var:唱歌CD总和}" ExpressionTypeL="Numeric" ExpressionR="7" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                      <ConditionSingle Enabled="true" ExpressionL="${var:唱歌CD总和}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                    </Condition>
+                  </Action>
+                  <Action OrderNumber="3" NamedCallbackName="command" NamedCallbackParam="/ac 军神的赞美歌" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" VariableOp="SetString" VariableName="下一首歌" VariableExpression="军神的赞美歌" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                    <Condition Enabled="true" Grouping="Or">
+                      <ConditionSingle Enabled="false" ExpressionL="${var:唱歌CD总和}" ExpressionTypeL="String" ExpressionR="4" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                      <ConditionSingle Enabled="true" ExpressionL="${var:唱歌CD总和}" ExpressionTypeL="String" ExpressionR="5" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                      <ConditionSingle Enabled="false" ExpressionL="${var:唱歌CD总和}" ExpressionTypeL="String" ExpressionR="0" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                    </Condition>
+                  </Action>
+                </Actions>
+                <Condition Enabled="true" Grouping="And">
+                  <ConditionSingle Enabled="true" ExpressionL="${player}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                  <ConditionSingle Enabled="false" ExpressionL="${var:唱歌总和}" ExpressionTypeL="String" ExpressionR="7" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                </Condition>
+              </Trigger>
+            </Triggers>
+          </Folder>
+        </Folders>
+        <Triggers>
+          <Trigger Enabled="true" Name="毒咬箭" Id="16b6c5ec-8aaf-6365-3656-2a62a8175785" RegularExpression="^.{14} Status(Add|Remove) 1(?&lt;effect&gt;A|E):[^:]*:(烈毒咬箭|毒咬箭):(?&lt;duration&gt;.+?):[^:]*:(?&lt;player&gt;.+?):[^:]*:(?&lt;target&gt;.+?):" PrevActions="Interrupt">
+            <Actions>
+              <Action OrderNumber="0" VariableOp="SetNumeric" VariableName="t_Veno" VariableExpression="${duration}*1000+${_timestampms}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${effect}" ExpressionTypeL="String" ExpressionR="A" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                </Condition>
+              </Action>
+              <Action OrderNumber="1" VariableOp="SetNumeric" VariableName="t_Veno" VariableExpression="${_timestampms}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${effect}" ExpressionTypeL="String" ExpressionR="E" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                </Condition>
+              </Action>
+              <Action OrderNumber="2" NamedCallbackName="command" NamedCallbackParam="/hotbar set &quot;伶牙俐齿&quot; 1 1 " VariableOp="SetNumeric" VariableName="伶牙俐齿状态" VariableExpression="0" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable" RefireInterrupt="True">
+                <Condition Enabled="false" Grouping="And">
+                  <ConditionGroup Enabled="true" Grouping="Or">
+                    <ConditionSingle Enabled="true" ExpressionL="${var:t_Veno}-${_timestampms}" ExpressionTypeL="Numeric" ExpressionR="5000" ExpressionTypeR="Numeric" ConditionType="NumericLessEqual" />
+                    <ConditionSingle Enabled="true" ExpressionL="${var:t_Wind}-${_timestampms}" ExpressionTypeL="Numeric" ExpressionR="5000" ExpressionTypeR="Numeric" ConditionType="NumericLessEqual" />
+                  </ConditionGroup>
+                  <ConditionSingle Enabled="true" ExpressionL="${_ffxivparty[${_ffxivplayer}].level}" ExpressionTypeL="Numeric" ExpressionR="56" ExpressionTypeR="Numeric" ConditionType="NumericGreaterEqual" />
+                  <ConditionGroup Enabled="true" Grouping="And">
+                    <ConditionSingle Enabled="true" ExpressionL="${var:t_Veno}-${_timestampms}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                    <ConditionSingle Enabled="true" ExpressionL="${var:t_Wind}-${_timestampms}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                  </ConditionGroup>
+                </Condition>
+              </Action>
+              <Action OrderNumber="3" NamedCallbackName="command" NamedCallbackParam="/hotbar set &quot;直线射击&quot; 1 1 " TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" RefireInterrupt="True">
+                <Condition Enabled="true" Grouping="And">
+                  <ConditionSingle Enabled="true" ExpressionL="${var:is_Straight}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                  <ConditionSingle Enabled="true" ExpressionL="${effect}" ExpressionTypeL="String" ExpressionR="A" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                  <ConditionSingle Enabled="true" ExpressionL="${var:t_Wind}-${_timestampms}" ExpressionTypeL="Numeric" ExpressionR="5000" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                </Condition>
+              </Action>
+              <Action OrderNumber="5" NamedCallbackName="command" NamedCallbackParam="/hotbar set &quot;强力射击&quot; 1 1 " TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" RefireInterrupt="True">
+                <Condition Enabled="true" Grouping="And">
+                  <ConditionSingle Enabled="true" ExpressionL="${var:is_Straight}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericNotEqual" />
+                  <ConditionSingle Enabled="true" ExpressionL="${var:t_Wind}-${_timestampms}" ExpressionTypeL="Numeric" ExpressionR="5000" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                  <ConditionSingle Enabled="true" ExpressionL="${effect}" ExpressionTypeL="String" ExpressionR="A" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                </Condition>
+              </Action>
+            </Actions>
+            <Condition Enabled="true" Grouping="Or">
+              <ConditionSingle Enabled="true" ExpressionL="${player}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+            </Condition>
+          </Trigger>
+          <Trigger Enabled="true" Name="DoT" Id="6fa13364-8af0-22fa-4ad9-405671c924a1" RegularExpression="^.{14} DoTHoT 18:40" PrevActions="Interrupt">
+            <Actions>
+              <Action OrderNumber="1" NamedCallbackName="command" NamedCallbackParam="/hotbar set &quot;直线射击&quot; 1 1 " TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="NamedCallback" RefireInterrupt="True">
+                <Condition Enabled="true" Grouping="And">
+                  <ConditionSingle Enabled="true" ExpressionL="${var:is_Straight}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                  <ConditionGroup Enabled="true" Grouping="Or">
+                    <ConditionGroup Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="${var:t_Veno}-${_timestampms}" ExpressionTypeL="Numeric" ExpressionR="5000" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                      <ConditionSingle Enabled="true" ExpressionL="${var:t_Wind}-${_timestampms}" ExpressionTypeL="Numeric" ExpressionR="5000" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                    </ConditionGroup>
+                    <ConditionSingle Enabled="true" ExpressionL="${_ffxivparty[${_ffxivplayer}].level}" ExpressionTypeL="Numeric" ExpressionR="56" ExpressionTypeR="Numeric" ConditionType="NumericLess" />
+                    <ConditionSingle Enabled="true" ExpressionL="${var:t_Veno}-${_timestampms}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericLess" />
+                    <ConditionSingle Enabled="true" ExpressionL="${var:t_Wind}-${_timestampms}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericLess" />
+                  </ConditionGroup>
+                </Condition>
+              </Action>
+              <Action OrderNumber="2" NamedCallbackName="command" NamedCallbackParam="/hotbar set &quot;强力射击&quot; 1 1 " TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="NamedCallback" RefireInterrupt="True">
+                <Condition Enabled="true" Grouping="And">
+                  <ConditionSingle Enabled="true" ExpressionL="${var:is_Straight}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericNotEqual" />
+                  <ConditionGroup Enabled="true" Grouping="Or">
+                    <ConditionGroup Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="${var:t_Veno}-${_timestampms}" ExpressionTypeL="Numeric" ExpressionR="5000" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                      <ConditionSingle Enabled="true" ExpressionL="${var:t_Wind}-${_timestampms}" ExpressionTypeL="Numeric" ExpressionR="5000" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                    </ConditionGroup>
+                    <ConditionSingle Enabled="true" ExpressionL="${_ffxivparty[${_ffxivplayer}].level}" ExpressionTypeL="Numeric" ExpressionR="56" ExpressionTypeR="Numeric" ConditionType="NumericLess" />
+                    <ConditionSingle Enabled="true" ExpressionL="${var:t_Veno}-${_timestampms}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericLess" />
+                    <ConditionSingle Enabled="true" ExpressionL="${var:t_Wind}-${_timestampms}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericLess" />
+                  </ConditionGroup>
+                </Condition>
+              </Action>
+              <Action OrderNumber="3" NamedCallbackName="command" NamedCallbackParam="/hotbar set &quot;伶牙俐齿&quot; 1 1 " TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" RefireInterrupt="True">
+                <Condition Enabled="true" Grouping="And">
+                  <ConditionGroup Enabled="true" Grouping="And">
+                    <ConditionSingle Enabled="true" ExpressionL="${var:t_Veno}-${_timestampms}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                    <ConditionSingle Enabled="true" ExpressionL="${var:t_Wind}-${_timestampms}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                  </ConditionGroup>
+                  <ConditionSingle Enabled="true" ExpressionL="${_ffxivparty[${_ffxivplayer}].level}" ExpressionTypeL="Numeric" ExpressionR="56" ExpressionTypeR="Numeric" ConditionType="NumericGreaterEqual" />
+                  <ConditionGroup Enabled="true" Grouping="Or">
+                    <ConditionSingle Enabled="true" ExpressionL="${var:t_Veno}-${_timestampms}" ExpressionTypeL="Numeric" ExpressionR="5000" ExpressionTypeR="Numeric" ConditionType="NumericLessEqual" />
+                    <ConditionSingle Enabled="true" ExpressionL="${var:t_Wind}-${_timestampms}" ExpressionTypeL="Numeric" ExpressionR="5000" ExpressionTypeR="Numeric" ConditionType="NumericLessEqual" />
+                  </ConditionGroup>
+                </Condition>
+              </Action>
+              <Action OrderNumber="4" NamedCallbackName="command" NamedCallbackParam="/hotbar set &quot;伶牙俐齿&quot; 1 1 " VariableOp="SetNumeric" VariableName="伶牙俐齿状态" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable" RefireInterrupt="True">
+                <Condition Enabled="true" Grouping="And">
+                  <ConditionGroup Enabled="true" Grouping="And">
+                    <ConditionSingle Enabled="true" ExpressionL="${var:t_Veno}-${_timestampms}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                    <ConditionSingle Enabled="true" ExpressionL="${var:t_Wind}-${_timestampms}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                  </ConditionGroup>
+                  <ConditionSingle Enabled="true" ExpressionL="${_ffxivparty[${_ffxivplayer}].level}" ExpressionTypeL="Numeric" ExpressionR="56" ExpressionTypeR="Numeric" ConditionType="NumericGreaterEqual" />
+                  <ConditionGroup Enabled="true" Grouping="Or">
+                    <ConditionSingle Enabled="true" ExpressionL="${var:t_Veno}-${_timestampms}" ExpressionTypeL="Numeric" ExpressionR="5000" ExpressionTypeR="Numeric" ConditionType="NumericLessEqual" />
+                    <ConditionSingle Enabled="true" ExpressionL="${var:t_Wind}-${_timestampms}" ExpressionTypeL="Numeric" ExpressionR="5000" ExpressionTypeR="Numeric" ConditionType="NumericLessEqual" />
+                  </ConditionGroup>
+                </Condition>
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="true" Name="直线射击" Id="7c9a52b2-ec95-a6ea-a273-cd4e5e94a38a" RegularExpression="^.{14} Status(Add|Remove) 1(?&lt;effect&gt;A|E):[^:]*:直线射击预备:(?&lt;duration&gt;.+?):[^:]*:(?&lt;player&gt;.+?):" PrevActions="Interrupt">
+            <Actions>
+              <Action OrderNumber="1" VariableOp="SetNumeric" VariableName="is_Straight" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${effect}" ExpressionTypeL="String" ExpressionR="A" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                </Condition>
+              </Action>
+              <Action OrderNumber="2" VariableOp="SetNumeric" VariableName="is_Straight" VariableExpression="0" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${effect}" ExpressionTypeL="String" ExpressionR="E" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                </Condition>
+              </Action>
+              <Action OrderNumber="3" NamedCallbackName="command" NamedCallbackParam="/hotbar set &quot;直线射击&quot; 1 1 " TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" RefireInterrupt="True">
+                <Condition Enabled="true" Grouping="And">
+                  <ConditionSingle Enabled="true" ExpressionL="${effect}" ExpressionTypeL="String" ExpressionR="A" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                  <ConditionGroup Enabled="true" Grouping="Or">
+                    <ConditionGroup Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="${var:t_Veno}-${_timestampms}" ExpressionTypeL="Numeric" ExpressionR="5000" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                      <ConditionSingle Enabled="true" ExpressionL="${var:t_Wind}-${_timestampms}" ExpressionTypeL="Numeric" ExpressionR="5000" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                    </ConditionGroup>
+                    <ConditionSingle Enabled="true" ExpressionL="${_ffxivparty[${_ffxivplayer}].level}" ExpressionTypeL="Numeric" ExpressionR="56" ExpressionTypeR="Numeric" ConditionType="NumericLess" />
+                    <ConditionSingle Enabled="true" ExpressionL="${var:t_Veno}-${_timestampms}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericLess" />
+                    <ConditionSingle Enabled="true" ExpressionL="${var:t_Wind}-${_timestampms}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericLess" />
+                  </ConditionGroup>
+                </Condition>
+              </Action>
+              <Action OrderNumber="4" NamedCallbackName="command" NamedCallbackParam="/hotbar set &quot;强力射击&quot; 1 1 " TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" RefireInterrupt="True">
+                <Condition Enabled="true" Grouping="And">
+                  <ConditionSingle Enabled="true" ExpressionL="${effect}" ExpressionTypeL="String" ExpressionR="E" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                  <ConditionGroup Enabled="true" Grouping="Or">
+                    <ConditionGroup Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="${var:t_Veno}-${_timestampms}" ExpressionTypeL="Numeric" ExpressionR="5000" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                      <ConditionSingle Enabled="true" ExpressionL="${var:t_Wind}-${_timestampms}" ExpressionTypeL="Numeric" ExpressionR="5000" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                    </ConditionGroup>
+                    <ConditionSingle Enabled="true" ExpressionL="${_ffxivparty[${_ffxivplayer}].level}" ExpressionTypeL="Numeric" ExpressionR="56" ExpressionTypeR="Numeric" ConditionType="NumericLess" />
+                    <ConditionSingle Enabled="true" ExpressionL="${var:t_Veno}-${_timestampms}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericLess" />
+                    <ConditionSingle Enabled="true" ExpressionL="${var:t_Wind}-${_timestampms}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericLess" />
+                  </ConditionGroup>
+                </Condition>
+              </Action>
+              <Action OrderNumber="5" NamedCallbackName="command" NamedCallbackParam="/hotbar set &quot;伶牙俐齿&quot; 1 1 " TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" RefireInterrupt="True">
+                <Condition Enabled="true" Grouping="And">
+                  <ConditionGroup Enabled="true" Grouping="Or">
+                    <ConditionSingle Enabled="true" ExpressionL="${var:t_Veno}-${_timestampms}" ExpressionTypeL="Numeric" ExpressionR="5000" ExpressionTypeR="Numeric" ConditionType="NumericLessEqual" />
+                    <ConditionSingle Enabled="true" ExpressionL="${var:t_Wind}-${_timestampms}" ExpressionTypeL="Numeric" ExpressionR="5000" ExpressionTypeR="Numeric" ConditionType="NumericLessEqual" />
+                  </ConditionGroup>
+                  <ConditionSingle Enabled="true" ExpressionL="${_ffxivparty[${_ffxivplayer}].level}" ExpressionTypeL="Numeric" ExpressionR="56" ExpressionTypeR="Numeric" ConditionType="NumericGreaterEqual" />
+                  <ConditionGroup Enabled="true" Grouping="And">
+                    <ConditionSingle Enabled="true" ExpressionL="${var:t_Veno}-${_timestampms}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                    <ConditionSingle Enabled="true" ExpressionL="${var:t_Wind}-${_timestampms}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                  </ConditionGroup>
+                </Condition>
+              </Action>
+              <Action OrderNumber="6" NamedCallbackName="command" NamedCallbackParam="/hotbar set &quot;伶牙俐齿&quot; 1 1 " VariableOp="SetNumeric" VariableName="伶牙俐齿状态" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="Variable" RefireInterrupt="True">
+                <Condition Enabled="true" Grouping="And">
+                  <ConditionGroup Enabled="true" Grouping="Or">
+                    <ConditionSingle Enabled="true" ExpressionL="${var:t_Veno}-${_timestampms}" ExpressionTypeL="Numeric" ExpressionR="5000" ExpressionTypeR="Numeric" ConditionType="NumericLessEqual" />
+                    <ConditionSingle Enabled="true" ExpressionL="${var:t_Wind}-${_timestampms}" ExpressionTypeL="Numeric" ExpressionR="5000" ExpressionTypeR="Numeric" ConditionType="NumericLessEqual" />
+                  </ConditionGroup>
+                  <ConditionSingle Enabled="true" ExpressionL="${_ffxivparty[${_ffxivplayer}].level}" ExpressionTypeL="Numeric" ExpressionR="56" ExpressionTypeR="Numeric" ConditionType="NumericGreaterEqual" />
+                  <ConditionGroup Enabled="true" Grouping="And">
+                    <ConditionSingle Enabled="true" ExpressionL="${var:t_Veno}-${_timestampms}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                    <ConditionSingle Enabled="true" ExpressionL="${var:t_Wind}-${_timestampms}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                  </ConditionGroup>
+                </Condition>
+              </Action>
+            </Actions>
+            <Condition Enabled="true" Grouping="Or">
+              <ConditionSingle Enabled="true" ExpressionL="${player}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+            </Condition>
+          </Trigger>
+          <Trigger Enabled="true" Name="爆破箭" Id="91987716-cc39-9544-73c8-9e82e4b1e2cc" RegularExpression="^.{15}\S+ (15|16):1.{7}:(?&lt;player&gt;[^:]+):[^:]*:爆破箭" PrevActions="Interrupt">
+            <Actions>
+              <Action OrderNumber="1" NamedCallbackName="command" NamedCallbackParam="/hotbar set &quot;直线射击&quot; 1 1 " TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" RefireInterrupt="True">
+                <Condition Enabled="true" Grouping="And">
+                  <ConditionSingle Enabled="true" ExpressionL="${var:is_Straight}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                </Condition>
+              </Action>
+              <Action OrderNumber="2" NamedCallbackName="command" NamedCallbackParam="/hotbar set &quot;强力射击&quot; 1 1 " TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" RefireInterrupt="True">
+                <Condition Enabled="true" Grouping="And">
+                  <ConditionSingle Enabled="true" ExpressionL="${var:is_Straight}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericNotEqual" />
+                </Condition>
+              </Action>
+            </Actions>
+            <Condition Enabled="true" Grouping="Or">
+              <ConditionSingle Enabled="true" ExpressionL="${player}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+            </Condition>
+          </Trigger>
+          <Trigger Enabled="true" Sequential="True" Name="Reset" Id="a6a46efa-5fe3-6aaa-8253-bf4f57bee4b0" RegularExpression="^.{14} (AddCombatant 03:[^:]*:(?&lt;player&gt;.+?):(?&lt;job&gt;.+?):|Director 21:.{8}:4000001(?&lt;d&gt;[026]))|^.{14} 21:.{8}:400000(03|1[026])|^.{14} Director 21:.{8}:400000(03|1[026])">
+            <Actions>
+              <Action OrderNumber="1" NamedCallbackName="command" NamedCallbackParam="/hotbar set &quot;爆发射击&quot; 1 1 " TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="2" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" VariableOp="SetString" VariableName="下一首歌" VariableExpression="放浪神的小步舞曲" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="3" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" VariableOp="SetString" VariableName="唱歌CD总和" VariableExpression="0" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="4" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" VariableOp="SetString" VariableName="绝峰箭状态" VariableExpression="0" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="5" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" VariableOp="SetString" VariableName="伶牙俐齿状态" VariableExpression="0" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="6" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerOp="CancelAllTrigger" ActionType="Trigger">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="true" Grouping="Or">
+              <ConditionSingle Enabled="true" ExpressionL="${d}" ExpressionTypeL="String" ExpressionR="" ExpressionTypeR="String" ConditionType="StringNotEqualCase" />
+              <ConditionGroup Enabled="true" Grouping="And">
+                <ConditionSingle Enabled="true" ExpressionL="hex2dec(${job})" ExpressionTypeL="Numeric" ExpressionR="${_ffxivparty[${_ffxivplayer}].jobid}" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                <ConditionSingle Enabled="true" ExpressionL="${player}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+              </ConditionGroup>
+            </Condition>
+          </Trigger>
+          <Trigger Enabled="true" Name="风蚀箭" Id="3292d997-454c-426a-813a-d30994c50e11" RegularExpression="^.{14} Status(Add|Remove) 1(?&lt;effect&gt;A|E):[^:]*:(狂风蚀箭|风蚀箭):(?&lt;duration&gt;.+?):[^:]*:(?&lt;player&gt;.+?):[^:]*:(?&lt;target&gt;.+?):" PrevActions="Interrupt">
+            <Actions>
+              <Action OrderNumber="1" VariableOp="SetNumeric" VariableName="t_Wind" VariableExpression="${duration}*1000+${_timestampms}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${effect}" ExpressionTypeL="String" ExpressionR="A" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                </Condition>
+              </Action>
+              <Action OrderNumber="2" VariableOp="SetNumeric" VariableName="t_Wind" VariableExpression="${_timestampms}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${effect}" ExpressionTypeL="String" ExpressionR="E" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                </Condition>
+              </Action>
+              <Action OrderNumber="3" NamedCallbackName="command" NamedCallbackParam="/hotbar set &quot;伶牙俐齿&quot; 1 1 " VariableOp="SetNumeric" VariableName="伶牙俐齿状态" VariableExpression="0" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable" RefireInterrupt="True">
+                <Condition Enabled="false" Grouping="And">
+                  <ConditionGroup Enabled="true" Grouping="Or">
+                    <ConditionSingle Enabled="true" ExpressionL="${var:t_Veno}-${_timestampms}" ExpressionTypeL="Numeric" ExpressionR="5000" ExpressionTypeR="Numeric" ConditionType="NumericLessEqual" />
+                    <ConditionSingle Enabled="true" ExpressionL="${var:t_Wind}-${_timestampms}" ExpressionTypeL="Numeric" ExpressionR="5000" ExpressionTypeR="Numeric" ConditionType="NumericLessEqual" />
+                  </ConditionGroup>
+                  <ConditionSingle Enabled="true" ExpressionL="${_ffxivparty[${_ffxivplayer}].level}" ExpressionTypeL="Numeric" ExpressionR="56" ExpressionTypeR="Numeric" ConditionType="NumericGreaterEqual" />
+                  <ConditionGroup Enabled="true" Grouping="And">
+                    <ConditionSingle Enabled="true" ExpressionL="${var:t_Veno}-${_timestampms}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                    <ConditionSingle Enabled="true" ExpressionL="${var:t_Wind}-${_timestampms}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                  </ConditionGroup>
+                </Condition>
+              </Action>
+              <Action OrderNumber="4" NamedCallbackName="command" NamedCallbackParam="/hotbar set &quot;直线射击&quot; 1 1 " TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" RefireInterrupt="True">
+                <Condition Enabled="true" Grouping="And">
+                  <ConditionSingle Enabled="true" ExpressionL="${var:is_Straight}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                  <ConditionSingle Enabled="true" ExpressionL="${effect}" ExpressionTypeL="String" ExpressionR="A" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                  <ConditionSingle Enabled="true" ExpressionL="${var:t_Veno}-${_timestampms}" ExpressionTypeL="Numeric" ExpressionR="5000" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                </Condition>
+              </Action>
+              <Action OrderNumber="5" NamedCallbackName="command" NamedCallbackParam="/hotbar set &quot;强力射击&quot; 1 1 " TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" RefireInterrupt="True">
+                <Condition Enabled="true" Grouping="And">
+                  <ConditionSingle Enabled="true" ExpressionL="${var:is_Straight}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericNotEqual" />
+                  <ConditionSingle Enabled="true" ExpressionL="${var:t_Veno}-${_timestampms}" ExpressionTypeL="Numeric" ExpressionR="5000" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                  <ConditionSingle Enabled="true" ExpressionL="${effect}" ExpressionTypeL="String" ExpressionR="A" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                </Condition>
+              </Action>
+            </Actions>
+            <Condition Enabled="true" Grouping="Or">
+              <ConditionSingle Enabled="true" ExpressionL="${player}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+            </Condition>
+          </Trigger>
+          <Trigger Enabled="true" Name="伶牙俐齿" Id="2a9efd99-a664-4bc8-9fd0-abbaab711da7" RegularExpression="^.{15}\S+ (15|16):1.{7}:(?&lt;player&gt;[^:]+):[^:]*:伶牙俐齿" PrevActions="Interrupt">
+            <Actions>
+              <Action OrderNumber="1" NamedCallbackName="command" NamedCallbackParam="/hotbar set &quot;直线射击&quot; 1 1 " TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" RefireInterrupt="True">
+                <Condition Enabled="true" Grouping="And">
+                  <ConditionSingle Enabled="true" ExpressionL="${var:is_Straight}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                </Condition>
+              </Action>
+              <Action OrderNumber="2" NamedCallbackName="command" NamedCallbackParam="/hotbar set &quot;强力射击&quot; 1 1 " TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" RefireInterrupt="True">
+                <Condition Enabled="true" Grouping="And">
+                  <ConditionSingle Enabled="true" ExpressionL="${var:is_Straight}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericNotEqual" />
+                </Condition>
+              </Action>
+              <Action OrderNumber="3" NamedCallbackName="command" NamedCallbackParam="/hotbar set &quot;伶牙俐齿&quot; 1 1 " VariableOp="SetNumeric" VariableName="伶牙俐齿状态" VariableExpression="0" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable" RefireInterrupt="True">
+                <Condition Enabled="false" Grouping="And">
+                  <ConditionGroup Enabled="true" Grouping="Or">
+                    <ConditionSingle Enabled="true" ExpressionL="${var:t_Veno}-${_timestampms}" ExpressionTypeL="Numeric" ExpressionR="5000" ExpressionTypeR="Numeric" ConditionType="NumericLessEqual" />
+                    <ConditionSingle Enabled="true" ExpressionL="${var:t_Wind}-${_timestampms}" ExpressionTypeL="Numeric" ExpressionR="5000" ExpressionTypeR="Numeric" ConditionType="NumericLessEqual" />
+                  </ConditionGroup>
+                  <ConditionSingle Enabled="true" ExpressionL="${_ffxivparty[${_ffxivplayer}].level}" ExpressionTypeL="Numeric" ExpressionR="56" ExpressionTypeR="Numeric" ConditionType="NumericGreaterEqual" />
+                  <ConditionGroup Enabled="true" Grouping="And">
+                    <ConditionSingle Enabled="true" ExpressionL="${var:t_Veno}-${_timestampms}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                    <ConditionSingle Enabled="true" ExpressionL="${var:t_Wind}-${_timestampms}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                  </ConditionGroup>
+                </Condition>
+              </Action>
+              <Action OrderNumber="4" NamedCallbackName="command" NamedCallbackParam="/hotbar set &quot;绝峰箭&quot; 1 1 " TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="NamedCallback" ExecutionDelayExpression="300" RefireInterrupt="True">
+                <Condition Enabled="true" Grouping="And">
+                  <ConditionSingle Enabled="true" ExpressionL="${var:绝峰箭状态}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericNotEqual" />
+                </Condition>
+              </Action>
+            </Actions>
+            <Condition Enabled="true" Grouping="Or">
+              <ConditionSingle Enabled="true" ExpressionL="${player}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+            </Condition>
+          </Trigger>
+          <Trigger Enabled="true" Sequential="True" Name="06 基础攻击按优先级顺序触发" Id="6fba4e83-62be-4752-ba2c-c760d072fef8" RegularExpression="^.{15}\S+ (15|16):1.{7}:(?&lt;player&gt;[^:]+):[^:]*:(爆发射击|辉煌箭|伶牙俐齿|狂风蚀箭|烈毒咬箭):" PrevActions="Interrupt">
+            <Actions>
+              <Action OrderNumber="1" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="SystemBeep">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="2" NamedCallbackName="command" NamedCallbackParam="/ac 光明神的最终乐章" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" ExecutionDelayExpression="600">
+                <Condition Enabled="true" Grouping="And">
+                  <ConditionSingle Enabled="true" ExpressionL="${var:唱歌总和}" ExpressionTypeL="String" ExpressionR="3" ExpressionTypeR="String" ConditionType="NumericNotEqual" />
+                  <ConditionSingle Enabled="true" ExpressionL="${var:唱歌总和}" ExpressionTypeL="String" ExpressionR="6" ExpressionTypeR="String" ConditionType="NumericNotEqual" />
+                  <ConditionSingle Enabled="true" ExpressionL="${var:唱歌总和}" ExpressionTypeL="String" ExpressionR="5" ExpressionTypeR="String" ConditionType="NumericNotEqual" />
+                </Condition>
+              </Action>
+              <Action OrderNumber="3" NamedCallbackName="command" NamedCallbackParam="/ac 完美音调" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" ExecutionDelayExpression="20">
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${var:完美音调层数}" ExpressionTypeL="String" ExpressionR="3" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                </Condition>
+              </Action>
+              <Action OrderNumber="4" NamedCallbackName="command" NamedCallbackParam="/ac ${var:下一首歌}" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" ExecutionDelayExpression="20">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="5" NamedCallbackName="command" NamedCallbackParam="/ac 战斗之声" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" ExecutionDelayExpression="20">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="6" NamedCallbackName="command" NamedCallbackParam="/ac 猛者强击" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" ExecutionDelayExpression="20">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="7" NamedCallbackName="command" NamedCallbackParam="/ac 纷乱箭" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" ExecutionDelayExpression="20">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="8" NamedCallbackName="command" NamedCallbackParam="/ac 侧风诱导箭" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" ExecutionDelayExpression="20">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="9" NamedCallbackName="command" NamedCallbackParam="/ac 九天连箭" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" ExecutionDelayExpression="20">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="10" NamedCallbackName="command" NamedCallbackParam="/ac 失血箭" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" ExecutionDelayExpression="20">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="11" NamedCallbackName="command" NamedCallbackParam="/ac 猛者强击" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" ExecutionDelayExpression="700">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="12" NamedCallbackName="command" NamedCallbackParam="/ac 完美音调" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" ExecutionDelayExpression="20">
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${var:完美音调层数}" ExpressionTypeL="String" ExpressionR="3" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                </Condition>
+              </Action>
+              <Action OrderNumber="13" NamedCallbackName="command" NamedCallbackParam="/ac ${var:下一首歌}" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" ExecutionDelayExpression="20">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="14" NamedCallbackName="command" NamedCallbackParam="/ac 战斗之声" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" ExecutionDelayExpression="20">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="15" NamedCallbackName="command" NamedCallbackParam="/ac 光明神的最终乐章" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" ExecutionDelayExpression="20">
+                <Condition Enabled="true" Grouping="And">
+                  <ConditionSingle Enabled="true" ExpressionL="${var:唱歌总和}" ExpressionTypeL="String" ExpressionR="3" ExpressionTypeR="String" ConditionType="NumericNotEqual" />
+                  <ConditionSingle Enabled="true" ExpressionL="${var:唱歌总和}" ExpressionTypeL="String" ExpressionR="5" ExpressionTypeR="String" ConditionType="NumericNotEqual" />
+                  <ConditionSingle Enabled="true" ExpressionL="${var:唱歌总和}" ExpressionTypeL="String" ExpressionR="6" ExpressionTypeR="String" ConditionType="NumericNotEqual" />
+                </Condition>
+              </Action>
+              <Action OrderNumber="16" NamedCallbackName="command" NamedCallbackParam="/ac 纷乱箭" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" ExecutionDelayExpression="20">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="17" NamedCallbackName="command" NamedCallbackParam="/ac 侧风诱导箭" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" ExecutionDelayExpression="20">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="18" NamedCallbackName="command" NamedCallbackParam="/ac 九天连箭" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" ExecutionDelayExpression="20">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="19" NamedCallbackName="command" NamedCallbackParam="/ac 失血箭" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" ExecutionDelayExpression="20">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="true" Grouping="Or">
+              <ConditionSingle Enabled="true" ExpressionL="${player}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+              <ConditionSingle Enabled="false" ExpressionL="${var:爆发射击次数}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+            </Condition>
+          </Trigger>
+        </Triggers>
+      </Folder>
+      <Folder Id="52a6dd06-4e32-4d67-b87a-11b2f338c707" Name="AOE" Enabled="true">
+        <Folders />
+        <Triggers>
+          <Trigger Enabled="true" Sequential="True" Name="06 基础攻击按优先级顺序触发" Id="3ac8b5ca-d4e4-483f-a596-2e28b0ceb758" RegularExpression="^.{15}\S+ (15|16):1.{7}:(?&lt;player&gt;[^:]+):[^:]*:(百首龙牙箭|影噬箭):" PrevActions="Interrupt">
+            <Actions>
+              <Action OrderNumber="1" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="SystemBeep">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="2" NamedCallbackName="command" NamedCallbackParam="/ac 光明神的最终乐章" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" ExecutionDelayExpression="600">
+                <Condition Enabled="true" Grouping="And">
+                  <ConditionSingle Enabled="true" ExpressionL="${var:唱歌总和}" ExpressionTypeL="String" ExpressionR="3" ExpressionTypeR="String" ConditionType="NumericNotEqual" />
+                  <ConditionSingle Enabled="true" ExpressionL="${var:唱歌总和}" ExpressionTypeL="String" ExpressionR="6" ExpressionTypeR="String" ConditionType="NumericNotEqual" />
+                  <ConditionSingle Enabled="true" ExpressionL="${var:唱歌总和}" ExpressionTypeL="String" ExpressionR="5" ExpressionTypeR="String" ConditionType="NumericNotEqual" />
+                </Condition>
+              </Action>
+              <Action OrderNumber="3" NamedCallbackName="command" NamedCallbackParam="/ac 完美音调" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" ExecutionDelayExpression="20">
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${var:完美音调层数}" ExpressionTypeL="String" ExpressionR="3" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                </Condition>
+              </Action>
+              <Action OrderNumber="4" NamedCallbackName="command" NamedCallbackParam="/ac ${var:下一首歌}" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" ExecutionDelayExpression="20">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="5" NamedCallbackName="command" NamedCallbackParam="/ac 战斗之声" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" ExecutionDelayExpression="20">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="6" NamedCallbackName="command" NamedCallbackParam="/ac 猛者强击" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" ExecutionDelayExpression="20">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="7" NamedCallbackName="command" NamedCallbackParam="/ac 纷乱箭" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" ExecutionDelayExpression="20">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="8" NamedCallbackName="command" NamedCallbackParam="/ac 侧风诱导箭" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" ExecutionDelayExpression="20">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="9" NamedCallbackName="command" NamedCallbackParam="/ac 九天连箭" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" ExecutionDelayExpression="20">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="10" NamedCallbackName="command" NamedCallbackParam="/ac 死亡箭雨" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" ExecutionDelayExpression="20">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="11" NamedCallbackName="command" NamedCallbackParam="/ac 猛者强击" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" ExecutionDelayExpression="700">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="12" NamedCallbackName="command" NamedCallbackParam="/ac 完美音调" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" ExecutionDelayExpression="20">
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${var:完美音调层数}" ExpressionTypeL="String" ExpressionR="3" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                </Condition>
+              </Action>
+              <Action OrderNumber="13" NamedCallbackName="command" NamedCallbackParam="/ac ${var:下一首歌}" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" ExecutionDelayExpression="20">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="14" NamedCallbackName="command" NamedCallbackParam="/ac 战斗之声" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" ExecutionDelayExpression="20">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="15" NamedCallbackName="command" NamedCallbackParam="/ac 光明神的最终乐章" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" ExecutionDelayExpression="20">
+                <Condition Enabled="true" Grouping="And">
+                  <ConditionSingle Enabled="true" ExpressionL="${var:唱歌总和}" ExpressionTypeL="String" ExpressionR="3" ExpressionTypeR="String" ConditionType="NumericNotEqual" />
+                  <ConditionSingle Enabled="true" ExpressionL="${var:唱歌总和}" ExpressionTypeL="String" ExpressionR="5" ExpressionTypeR="String" ConditionType="NumericNotEqual" />
+                  <ConditionSingle Enabled="true" ExpressionL="${var:唱歌总和}" ExpressionTypeL="String" ExpressionR="6" ExpressionTypeR="String" ConditionType="NumericNotEqual" />
+                </Condition>
+              </Action>
+              <Action OrderNumber="16" NamedCallbackName="command" NamedCallbackParam="/ac 纷乱箭" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" ExecutionDelayExpression="20">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="17" NamedCallbackName="command" NamedCallbackParam="/ac 侧风诱导箭" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" ExecutionDelayExpression="20">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="18" NamedCallbackName="command" NamedCallbackParam="/ac 九天连箭" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" ExecutionDelayExpression="20">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="19" NamedCallbackName="command" NamedCallbackParam="/ac 死亡箭雨" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" ExecutionDelayExpression="20">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="true" Grouping="Or">
+              <ConditionSingle Enabled="true" ExpressionL="${player}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+              <ConditionSingle Enabled="false" ExpressionL="${var:爆发射击次数}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+            </Condition>
+          </Trigger>
+          <Trigger Enabled="true" Name="影噬箭预备" Id="9209919a-1404-492f-924b-5ef951e5c67c" RegularExpression="^.{14} Status(Add|Remove) 1(?&lt;effect&gt;A|E):[^:]*:影噬箭预备:(?&lt;duration&gt;.+?):[^:]*:(?&lt;player&gt;.+?):" PrevActions="Interrupt">
+            <Actions>
+              <Action OrderNumber="1" VariableOp="SetNumeric" VariableName="影噬箭预备状态" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${effect}" ExpressionTypeL="String" ExpressionR="A" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                </Condition>
+              </Action>
+              <Action OrderNumber="2" VariableOp="SetNumeric" VariableName="影噬箭预备状态" VariableExpression="0" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${effect}" ExpressionTypeL="String" ExpressionR="E" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                </Condition>
+              </Action>
+              <Action OrderNumber="3" NamedCallbackName="command" NamedCallbackParam="/hotbar set &quot;影噬箭&quot; 3 1 " TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" RefireInterrupt="True">
+                <Condition Enabled="true" Grouping="And">
+                  <ConditionSingle Enabled="true" ExpressionL="${effect}" ExpressionTypeL="String" ExpressionR="A" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                  <ConditionGroup Enabled="true" Grouping="Or">
+                    <ConditionGroup Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="${var:t_Veno}-${_timestampms}" ExpressionTypeL="Numeric" ExpressionR="5000" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                      <ConditionSingle Enabled="true" ExpressionL="${var:t_Wind}-${_timestampms}" ExpressionTypeL="Numeric" ExpressionR="5000" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                    </ConditionGroup>
+                    <ConditionSingle Enabled="true" ExpressionL="${_ffxivparty[${_ffxivplayer}].level}" ExpressionTypeL="Numeric" ExpressionR="56" ExpressionTypeR="Numeric" ConditionType="NumericLess" />
+                    <ConditionSingle Enabled="true" ExpressionL="${var:t_Veno}-${_timestampms}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericLess" />
+                    <ConditionSingle Enabled="true" ExpressionL="${var:t_Wind}-${_timestampms}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericLess" />
+                  </ConditionGroup>
+                </Condition>
+              </Action>
+              <Action OrderNumber="4" NamedCallbackName="command" NamedCallbackParam="/hotbar set &quot;百首龙牙箭&quot; 3 1 " TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" RefireInterrupt="True">
+                <Condition Enabled="true" Grouping="And">
+                  <ConditionSingle Enabled="true" ExpressionL="${effect}" ExpressionTypeL="String" ExpressionR="E" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                  <ConditionGroup Enabled="true" Grouping="Or">
+                    <ConditionGroup Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="${var:t_Veno}-${_timestampms}" ExpressionTypeL="Numeric" ExpressionR="5000" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                      <ConditionSingle Enabled="true" ExpressionL="${var:t_Wind}-${_timestampms}" ExpressionTypeL="Numeric" ExpressionR="5000" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                    </ConditionGroup>
+                    <ConditionSingle Enabled="true" ExpressionL="${_ffxivparty[${_ffxivplayer}].level}" ExpressionTypeL="Numeric" ExpressionR="56" ExpressionTypeR="Numeric" ConditionType="NumericLess" />
+                    <ConditionSingle Enabled="true" ExpressionL="${var:t_Veno}-${_timestampms}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericLess" />
+                    <ConditionSingle Enabled="true" ExpressionL="${var:t_Wind}-${_timestampms}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericLess" />
+                  </ConditionGroup>
+                </Condition>
+              </Action>
+            </Actions>
+            <Condition Enabled="true" Grouping="Or">
+              <ConditionSingle Enabled="true" ExpressionL="${player}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+            </Condition>
+          </Trigger>
+          <Trigger Enabled="true" Name="爆破箭" Id="181aab82-2aef-4083-80a0-e41c0afc6ee1" RegularExpression="^.{15}\S+ (15|16):1.{7}:(?&lt;player&gt;[^:]+):[^:]*:爆破箭" PrevActions="Interrupt">
+            <Actions>
+              <Action OrderNumber="1" NamedCallbackName="command" NamedCallbackParam="/hotbar set &quot;影噬箭&quot; 3 1 " TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" RefireInterrupt="True">
+                <Condition Enabled="true" Grouping="And">
+                  <ConditionSingle Enabled="true" ExpressionL="${var:影噬箭预备状态}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                </Condition>
+              </Action>
+              <Action OrderNumber="2" NamedCallbackName="command" NamedCallbackParam="/hotbar set &quot;百首龙牙箭&quot; 3 1 " TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" RefireInterrupt="True">
+                <Condition Enabled="true" Grouping="And">
+                  <ConditionSingle Enabled="true" ExpressionL="${var:影噬箭预备状态}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                </Condition>
+              </Action>
+            </Actions>
+            <Condition Enabled="true" Grouping="Or">
+              <ConditionSingle Enabled="true" ExpressionL="${player}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+            </Condition>
+          </Trigger>
+        </Triggers>
+      </Folder>
+    </Folders>
+    <Triggers>
+      <Trigger Enabled="true" Sequential="True" Name="量谱" Id="1f04834f-1fb5-46ed-ac66-adffe95f61dd" RegularExpression="(?&lt;timestamp&gt;^.{14}) Gauge (?&lt;type&gt;1F):(?&lt;id&gt;[^:]*):(?&lt;data0&gt;[^:]*):(?&lt;data1&gt;[^:]*):(?&lt;data2&gt;[^:]*):(?&lt;data3&gt;[^:]*)(?:$|:)">
+        <Actions>
+          <Action OrderNumber="1" NamedCallbackName="command" NamedCallbackParam="/e data0:${data0}  data1:${data1}   data2:${data2}  data3:${data3}" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="NamedCallback">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="2" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" VariableOp="SetString" VariableName="修正后的data1" VariableExpression="${func:padleft(48,8):${data1}}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="3" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" VariableOp="SetString" VariableName="唱歌总和" VariableExpression="${func:substring(0,1):${var:修正后的data1}}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="4" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" VariableOp="SetString" VariableName="完美音调层数" VariableExpression="${func:substring(5,1):${var:修正后的data1}}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="5" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" VariableOp="SetNumeric" VariableName="灵魂之声数" VariableExpression="hex2dec(${func:substring(2,2):${var:修正后的data1}})" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="6" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" VariableOp="SetNumeric" VariableName="灵魂之声数" VariableExpression="${numeric:灵魂之声数十六进制}" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="Variable">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="7" NamedCallbackName="command" NamedCallbackParam="/e 灵魂之声数:${var:灵魂之声数}" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="NamedCallback">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="8" NamedCallbackName="command" NamedCallbackParam="/e 完美音调层数:${var:完美音调层数}" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="NamedCallback">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="9" NamedCallbackName="command" NamedCallbackParam="/hotbar set 绝峰箭 1 1" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback">
+            <Condition Enabled="true" Grouping="And">
+              <ConditionSingle Enabled="true" ExpressionL="${var:灵魂之声数}" ExpressionTypeL="Numeric" ExpressionR="100" ExpressionTypeR="Numeric" ConditionType="NumericGreaterEqual" />
+              <ConditionSingle Enabled="true" ExpressionL="${var:伶牙俐齿状态}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericNotEqual" />
+            </Condition>
+          </Action>
+          <Action OrderNumber="10" NamedCallbackName="command" NamedCallbackParam="/hotbar set 绝峰箭 3 1" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback">
+            <Condition Enabled="true" Grouping="And">
+              <ConditionSingle Enabled="true" ExpressionL="${var:灵魂之声数}" ExpressionTypeL="Numeric" ExpressionR="100" ExpressionTypeR="Numeric" ConditionType="NumericGreaterEqual" />
+              <ConditionSingle Enabled="false" ExpressionL="${var:伶牙俐齿状态}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericNotEqual" />
+            </Condition>
+          </Action>
+          <Action OrderNumber="11" NamedCallbackName="command" NamedCallbackParam="/hotbar set 绝峰箭 1 1" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" VariableOp="SetNumeric" VariableName="绝峰箭状态" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+            <Condition Enabled="true" Grouping="Or">
+              <ConditionSingle Enabled="true" ExpressionL="${var:灵魂之声数}" ExpressionTypeL="Numeric" ExpressionR="100" ExpressionTypeR="Numeric" ConditionType="NumericGreaterEqual" />
+            </Condition>
+          </Action>
+        </Actions>
+        <Condition Enabled="false" Grouping="Or" />
+      </Trigger>
+    </Triggers>
+  </ExportedFolder>
+</TriggernometryExport>

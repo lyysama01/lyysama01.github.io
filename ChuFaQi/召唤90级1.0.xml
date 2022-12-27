@@ -882,7 +882,9 @@
                 <Condition Enabled="false" Grouping="Or" />
               </Action>
             </Actions>
-            <Condition Enabled="false" Grouping="Or" />
+            <Condition Enabled="true" Grouping="Or">
+              <ConditionSingle Enabled="true" ExpressionL="${player}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+            </Condition>
           </Trigger>
           <Trigger Enabled="false" Sequential="True" Name="量谱" Id="3a4fc8b5-fd1c-4fe2-8c3a-8ba47606d63a" RegularExpression="(?&lt;timestamp&gt;^.{14}) Gauge (?&lt;type&gt;1F):(?&lt;id&gt;[^:]*):(?&lt;data0&gt;[^:]*):(?&lt;data1&gt;[^:]*):(?&lt;data2&gt;[^:]*):(?&lt;data3&gt;[^:]*)(?:$|:)">
             <Actions>

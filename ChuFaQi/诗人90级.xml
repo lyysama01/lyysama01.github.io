@@ -139,6 +139,29 @@
                   <ConditionSingle Enabled="false" ExpressionL="${var:唱歌总和}" ExpressionTypeL="String" ExpressionR="7" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                 </Condition>
               </Trigger>
+              <Trigger Enabled="true" Sequential="True" Name="01放浪神的小步舞曲 41秒完美音调可用" Id="464dd843-c911-43e2-9874-f5a3e55ef9f7" RegularExpression="^.{15}\S+ (15|16):1.{7}:(?&lt;player&gt;[^:]+):[^:]*:放浪神的小步舞曲:" PrevActions="Interrupt">
+                <Actions>
+                  <Action OrderNumber="1" NamedCallbackName="command" NamedCallbackParam="/ac 贤者的叙事谣" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" VariableOp="SetString" VariableName="完美音调可用" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable" ExecutionDelayExpression="41000">
+                    <Condition Enabled="false" Grouping="Or">
+                      <ConditionSingle Enabled="true" ExpressionL="${var:唱歌CD总和}" ExpressionTypeL="String" ExpressionR="4" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                      <ConditionSingle Enabled="true" ExpressionL="${var:唱歌CD总和}" ExpressionTypeL="String" ExpressionR="6" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                      <ConditionSingle Enabled="false" ExpressionL="${var:唱歌CD总和}" ExpressionTypeL="String" ExpressionR="0" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                    </Condition>
+                  </Action>
+                  <Action OrderNumber="2" NamedCallbackName="command" NamedCallbackParam="/ac 贤者的叙事谣" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" VariableOp="SetString" VariableName="完美音调可用" VariableExpression="0" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable" ExecutionDelayExpression="2000">
+                    <Condition Enabled="false" Grouping="Or">
+                      <ConditionSingle Enabled="true" ExpressionL="${var:唱歌CD总和}" ExpressionTypeL="String" ExpressionR="4" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                      <ConditionSingle Enabled="true" ExpressionL="${var:唱歌CD总和}" ExpressionTypeL="String" ExpressionR="6" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                      <ConditionSingle Enabled="false" ExpressionL="${var:唱歌CD总和}" ExpressionTypeL="String" ExpressionR="0" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                    </Condition>
+                  </Action>
+                </Actions>
+                <Condition Enabled="true" Grouping="And">
+                  <ConditionSingle Enabled="true" ExpressionL="${player}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                  <ConditionSingle Enabled="false" ExpressionL="${var:唱歌总和}" ExpressionTypeL="String" ExpressionR="7" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                </Condition>
+                <Conditions />
+              </Trigger>
             </Triggers>
           </Folder>
         </Folders>
@@ -351,7 +374,14 @@
               <Action OrderNumber="5" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" VariableOp="SetString" VariableName="伶牙俐齿状态" VariableExpression="0" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
                 <Condition Enabled="false" Grouping="Or" />
               </Action>
-              <Action OrderNumber="6" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerOp="CancelAllTrigger" ActionType="Trigger">
+              <Action OrderNumber="6" NamedCallbackName="command" NamedCallbackParam="/ac 贤者的叙事谣" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" VariableOp="SetString" VariableName="完美音调可用" VariableExpression="0" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                <Condition Enabled="false" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${var:唱歌CD总和}" ExpressionTypeL="String" ExpressionR="4" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                  <ConditionSingle Enabled="true" ExpressionL="${var:唱歌CD总和}" ExpressionTypeL="String" ExpressionR="6" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                  <ConditionSingle Enabled="false" ExpressionL="${var:唱歌CD总和}" ExpressionTypeL="String" ExpressionR="0" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                </Condition>
+              </Action>
+              <Action OrderNumber="7" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerOp="CancelAllTrigger" ActionType="Trigger">
                 <Condition Enabled="false" Grouping="Or" />
               </Action>
             </Actions>
@@ -457,6 +487,7 @@
               <Action OrderNumber="3" NamedCallbackName="command" NamedCallbackParam="/ac 完美音调" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" ExecutionDelayExpression="20">
                 <Condition Enabled="true" Grouping="Or">
                   <ConditionSingle Enabled="true" ExpressionL="${var:完美音调层数}" ExpressionTypeL="String" ExpressionR="3" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                  <ConditionSingle Enabled="true" ExpressionL="${var:完美音调可用}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                 </Condition>
               </Action>
               <Action OrderNumber="4" NamedCallbackName="command" NamedCallbackParam="/ac ${var:下一首歌}" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" ExecutionDelayExpression="20">
@@ -486,6 +517,7 @@
               <Action OrderNumber="12" NamedCallbackName="command" NamedCallbackParam="/ac 完美音调" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" ExecutionDelayExpression="20">
                 <Condition Enabled="true" Grouping="Or">
                   <ConditionSingle Enabled="true" ExpressionL="${var:完美音调层数}" ExpressionTypeL="String" ExpressionR="3" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                  <ConditionSingle Enabled="true" ExpressionL="${var:完美音调可用}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                 </Condition>
               </Action>
               <Action OrderNumber="13" NamedCallbackName="command" NamedCallbackParam="/ac ${var:下一首歌}" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" ExecutionDelayExpression="20">
@@ -539,6 +571,7 @@
               <Action OrderNumber="3" NamedCallbackName="command" NamedCallbackParam="/ac 完美音调" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" ExecutionDelayExpression="20">
                 <Condition Enabled="true" Grouping="Or">
                   <ConditionSingle Enabled="true" ExpressionL="${var:完美音调层数}" ExpressionTypeL="String" ExpressionR="3" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                  <ConditionSingle Enabled="true" ExpressionL="${var:完美音调可用}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                 </Condition>
               </Action>
               <Action OrderNumber="4" NamedCallbackName="command" NamedCallbackParam="/ac ${var:下一首歌}" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" ExecutionDelayExpression="20">
@@ -568,6 +601,7 @@
               <Action OrderNumber="12" NamedCallbackName="command" NamedCallbackParam="/ac 完美音调" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" ExecutionDelayExpression="20">
                 <Condition Enabled="true" Grouping="Or">
                   <ConditionSingle Enabled="true" ExpressionL="${var:完美音调层数}" ExpressionTypeL="String" ExpressionR="3" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                  <ConditionSingle Enabled="true" ExpressionL="${var:完美音调可用}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                 </Condition>
               </Action>
               <Action OrderNumber="13" NamedCallbackName="command" NamedCallbackParam="/ac ${var:下一首歌}" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" ExecutionDelayExpression="20">

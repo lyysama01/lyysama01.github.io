@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<TriggernometryExport Version="1">
+  <ExportedFolder Id="80662c78-550d-477e-9a44-6c73b199d887" Name="P5S lyy自定义" Enabled="true">
+    <Folders />
+    <Triggers>
+      <Trigger Enabled="true" Name="双重突进 防击退（防击退技能放在8号按键）" Id="49dc030e-4be3-4c56-88a5-ea3cc0a1dfe2" RegularExpression="^.{15}\S+ 14:.{8}:[^:]*:[^:]*:双重突进:">
+        <Actions>
+          <Action OrderNumber="1" KeypressType="WindowMessage" KeyPressExpression="${var:防击退快捷键}" KeyPressCode="56" KeyPressWindow="最终幻想XIV" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="KeyPress" ExecutionDelayExpression="4000">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="2" KeypressType="WindowMessage" KeyPressExpression="${var:防击退快捷键}" KeyPressCode="56" KeyPressWindow="最终幻想XIV" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="KeyPress" ExecutionDelayExpression="500">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="3" KeypressType="WindowMessage" KeyPressExpression="${var:防击退快捷键}" KeyPressCode="56" KeyPressWindow="最终幻想XIV" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="KeyPress" ExecutionDelayExpression="500">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="4" KeypressType="WindowMessage" KeyPressExpression="${var:防击退快捷键}" KeyPressCode="56" KeyPressWindow="最终幻想XIV" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="KeyPress" ExecutionDelayExpression="500">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="5" KeypressType="WindowMessage" KeyPressExpression="${var:防击退快捷键}" KeyPressCode="56" KeyPressWindow="最终幻想XIV" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="KeyPress" ExecutionDelayExpression="500">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="6" KeypressType="WindowMessage" KeyPressExpression="${var:防击退快捷键}" KeyPressCode="56" KeyPressWindow="最终幻想XIV" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="KeyPress" ExecutionDelayExpression="500">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="7" KeypressType="WindowMessage" KeyPressExpression="${var:防击退快捷键}" KeyPressCode="56" KeyPressWindow="最终幻想XIV" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="KeyPress" ExecutionDelayExpression="500">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="8" KeypressType="WindowMessage" KeyPressExpression="${var:防击退快捷键}" KeyPressCode="56" KeyPressWindow="最终幻想XIV" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="KeyPress" ExecutionDelayExpression="500">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="9" KeypressType="WindowMessage" KeyPressExpression="${var:防击退快捷键}" KeyPressCode="56" KeyPressWindow="最终幻想XIV" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="KeyPress" ExecutionDelayExpression="500">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+        </Actions>
+        <Condition Enabled="false" Grouping="Or" />
+        <Conditions />
+      </Trigger>
+    </Triggers>
+  </ExportedFolder>
+</TriggernometryExport>
